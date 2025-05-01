@@ -2,11 +2,17 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from lexis_partners_consulting.settings import base
 
 
 def main():
-    """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lexis_partners_consulting.settings')
+    
+    if base.DEBUG:
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'lexis_partners_consulting.settings.local'
+    else:
+        os.environ['DJANGO_SETTINGS_MODULE'] = 'lexis_partners_consulting.settings.production'
+    
+    
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

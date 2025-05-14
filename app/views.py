@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.contrib import messages
+from django.shortcuts import redirect
+from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
 
@@ -18,18 +22,43 @@ def about(request):
 
 
 def contact(request):
-    page = "Contact" 
-    
+    page = "Contact"
+
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")
         phone = request.POST.get("phone")
         subject = request.POST.get("subject")
         message = request.POST.get("message")
-        
-        
-        print(name, email, phone, subject, message)
-        print("Données affichées avec succès !!!")
+
+        try:
+            email_subject = f"Nouveau contact: {subject}"
+            email_content = f"""
+            Nouveau message reçu via le formulaire de contact:
+            
+            Nom complet: {name}
+            Email: {email}
+            Téléphone: {phone}
+            Sujet: {subject}
+            
+            Message:
+            {message}
+            
+            ---
+            Cet email a été envoyé automatiquement depuis le formulaire de contact.
+            """
+            send_mail(
+                email_subject,
+                email_content,
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.CONTACT_EMAIL],
+                fail_silently=False,
+            )
+            messages.success(request, "Votre message a été envoyé avec succès !")
+            return redirect(request.path)
+        except Exception as e:
+            messages.error(request, f"Erreur lors de l'envoi: {str(e)}")
+            return redirect(request.path)
 
     return render(request, 'app/contact.html', {
         'page': page

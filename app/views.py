@@ -23,35 +23,36 @@ def about(request):
 
 def contact(request):
     page = "Contact"
-
+    receiver = settings.EMAIL_HOST_USER
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")
         phone = request.POST.get("phone")
         subject = request.POST.get("subject")
         message = request.POST.get("message")
+       
 
         try:
-            email_subject = f"Nouveau contact: {subject}"
+            email_subject = f"Nouveau contact : {subject}"
             email_content = f"""
             Nouveau message reçu via le formulaire de contact:
-            
+
             Nom complet: {name}
             Email: {email}
             Téléphone: {phone}
             Sujet: {subject}
-            
+
             Message:
             {message}
-            
+
             ---
             Cet email a été envoyé automatiquement depuis le formulaire de contact.
             """
             send_mail(
                 email_subject,
                 email_content,
-                settings.DEFAULT_FROM_EMAIL,
-                [settings.CONTACT_EMAIL],
+                email,
+                [receiver],
                 fail_silently=False,
             )
             messages.success(request, "Votre message a été envoyé avec succès !")

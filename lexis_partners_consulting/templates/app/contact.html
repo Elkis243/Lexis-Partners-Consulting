@@ -1,0 +1,118 @@
+{% extends 'base.html' %} {% load static %} {% block base %} {% include 'components/navbar.html' %}
+<header class="hero-about">
+  <div class="container d-flex align-items-center h-100">
+    <div class="row justify-content-center">
+      <div class="col-md-10 px-4">
+        <h1 class="text-light" data-aos="fade-down" data-aos-duration="1000">
+          Contactez <br />
+          Lexis Partners consulting
+        </h1>
+        <p class="text-white mb-4 w-100" data-aos="fade-down" data-aos-duration="1000">
+          Une question ? Un projet ? Notre équipe est à votre écoute.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mt-5 p-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            {% if messages %} {% for message in messages %}
+            <div class="alert fs-6  text-center {{ message.tags }} return-messag" id="alert">{{ message }}</div>
+            {% endfor %} {% endif %}
+            <form action="" method="POST" class="needs-validation" id="customValidationForm" novalidate>
+              {% csrf_token %}
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Nom complet</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      minlength="3"
+                      maxlength="100"
+                      pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s\-']{2,50}$"
+                      name="name"
+                      required
+                    />
+                    <div class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Votre adresse e-mail"
+                      pattern="[\-a-zA-Z0-9~!$%^&*_=+\}\{'?]+(\.[\-a-zA-Z0-9~!$%^&*_=+\}\{'?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[a-zA-Z]{2,5}"
+                      required
+                    />
+                    <div class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Téléphone</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      pattern="^[0-9]{1,15}$"
+                      maxlength="12"
+                      placeholder="Exemple: 243 81 335 2409"
+                      required
+                    />
+                    <div class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="subject" class="form-label">Sélectionnez un sujet</label>
+                    <select class="form-select" id="subject" name="subject">
+                      <option value="Consultation en droit public">Consultation en droit public</option>
+                      <option value="Marchés publics et PPP">Marchés publics et PPP</option>
+                      <option value="Investissements et grands projets">Investissements et grands projets</option>
+                      <option value="Autre demande">Autre demande</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Votre message"
+                      minlength="10"
+                      maxlength="700"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn custom-btn mt-3">Envoyer le message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'components/footer.html' %}
+
+<script src="{% static 'js/validate_form.js' %}"></script>
+{% endblock %}

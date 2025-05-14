@@ -1,0 +1,47 @@
+{% load static %}
+<nav class="navbar navbar-expand-md sticky-top mb-5 position-absolute w-100 bg-transparent" style="z-index: 1000">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between w-100"> 
+      <div class="d-flex align-items-center">
+        <a href="{% url 'index' %}" class="navbar-brand">
+          <img src="{% static 'images/logo.png' %}" alt="Image" class="d-inline-block align-text-top me-2 img-fluid w-50">
+        </a>
+      </div>
+      <button class="navbar-toggler shadow-none border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1"></i>
+      </button>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" style="background-color: rgba(1, 1, 1, 0.832);">
+      <div class="offcanvas-header">
+        <a href="" class="navbar-brand">
+           <img src="{% static 'images/logo.png' %}" alt="" width="auto" height="100" class="d-inline-block align-text-top me-2">
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white rounded-2 {% if page == 'Accueil' %}active-link{% endif %}" href="{% url 'index' %}">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white text-nowrap rounded-2 {% if page == 'Qui sommes-nous ?' %}active-link{% endif %}" href="{% url 'about' %}">
+              Qui sommes-nous ?
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white rounded-2 {% if page == 'Nos services' %}active-link{% endif %}" href="{% url 'services' %}">
+              Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white rounded-2 {% if page == 'Contact' %}active-link{% endif %}" href="{% url 'contact' %}">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

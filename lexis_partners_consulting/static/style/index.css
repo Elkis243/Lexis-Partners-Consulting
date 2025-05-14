@@ -1,0 +1,89 @@
+:root {
+  --gold: #C2A83E;
+  --high-gold: #937f2c;
+}
+
+
+* {
+  font-family: "Outfit", serif;
+  font-size: 14px;
+}
+
+.active-link,
+.nav-link:hover {
+  background-color: var(--gold);
+}
+
+
+.hero {
+  height: 90dvh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 4, 9, 0.8)),
+    url('../images/hero-home.webp');
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-about {
+  height: 70dvh;
+  background-color: #012b39;
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+}
+
+
+.custom-btn {
+  background-color: var(--gold) !important;
+  color: white !important;
+  border-radius: 5px;
+  padding: 7px 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: var(--high-gold) !important;
+}
+
+.fa-check-custom {
+  color: var(--gold);
+  top: 3px;
+}
+
+
+.footer-links a {
+  transition: ease-in-out 0.2s;
+
+}
+
+.footer-links a:hover {
+  color: #937f2c !important;
+  transform: translateX(5px);
+}
+
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background: #54491f;
+  transform: translateY(-3px);
+}
+
+.custom-color-icon {
+  color: var(--gold) !important;
+}
+
+.custom-card-service{
+  background-color: rgba(240, 240, 240, 0.702);
+}
+
+.custom-card-service:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

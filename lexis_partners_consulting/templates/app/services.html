@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block base %}
+  {% include 'components/navbar.html' %}
+  <header class="hero-about">
+    <div class="container d-flex align-items-center h-100">
+      <div class="row justify-content-center">
+        <div class="col-md-10 px-4">
+          <h1 class="text-light" data-aos="fade-down" data-aos-duration="1000">Lexis partners<br /> consulting</h1>
+          <p class="text-white mb-4 w-75" data-aos="fade-down" data-aos-duration="1000">Découvrez des services juridiques personnalisés pour accompagner vos projets stratégiques.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mt-5 bg-light p-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="row justify-content-center gy-3 mt-5">
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-briefcase fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit des Marchés Publics et Partenariats Public-Privé (PPP)</p>
+                <p class="text-center flex-grow-1">Nous accompagnons les entreprises et institutions dans les marchés publics, de la passation à la gestion des contentieux.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-people-group fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit des Investissements et Grands Projets Publics</p>
+                <p class="text-center flex-grow-1">Nous accompagnons les investisseurs dans le montage juridique de projets d’infrastructure et les négociations avec les autorités et bailleurs.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container bg-service rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-diagram-project fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fs-5 fw-medium mb-3">Droit de la Gouvernance Publique et Réformes Administratives</p>
+                <p class="text-center flex-grow-1">Nous accompagnons les gouvernements dans la modernisation administrative, la conformité aux normes internationales et la rédaction de textes législatifs.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-scale-balanced fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit de la Régulation et des Services Publics</p>
+                <p class="text-center flex-grow-1">Nous accompagnons les agences de régulation et les entreprises privées dans les secteurs stratégiques, en offrant des conseils juridiques, en structurant des cadres réglementaires et en défendant les intérêts face aux autorités.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-coins fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit des Finances Publiques et Fiscalité des Affaires</p>
+                <p class="text-center flex-grow-1">Nous assistons les États dans la gestion budgétaire et la transparence fiscale, tout en accompagnant les entreprises privées dans l’optimisation fiscale, la conformité et les négociations avec les autorités financières.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-chess-knight fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit des Relations Gouvernementales et Lobbying</p>
+                <p class="text-center flex-grow-1">Nous accompagnons les acteurs privés dans leurs démarches de lobbying juridique, conseillons les gouvernements dans l’élaboration de politiques économiques, et mettons en place des stratégies d’influence auprès des décideurs publics.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-city fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit de la Décentralisation et des Collectivités Territoriales</p>
+                <p class="text-center flex-grow-1">Nous accompagnons juridiquement les entreprises dans leurs relations avec les autorités locales, conseillons les municipalités sur la gestion des investissements, et structurons des projets de développement en partenariat avec le secteur privé.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-gem fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit du Secteur Extractif et des Ressources Naturelles</p>
+                <p class="text-center flex-grow-1">Nous assistons nos clients dans la négociation de contrats miniers, pétroliers et gaziers, veillons à la conformité réglementaire avec les standards nationaux et internationaux, et gérons les conflits entre l’État, les entreprises et les communautés locales.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="container rounded-2 d-flex flex-column h-100 py-4 custom-card-service">
+                <div class="d-flex justify-content-center mb-3">
+                  <i class="fas fa-microchip fs-1 custom-color-icon"></i>
+                </div>
+                <p class="text-center fw-medium fs-5 mb-3">Droit de l’Innovation, du Numérique et des Nouvelles Technologies</p>
+                <p class="text-center flex-grow-1">Nous conseillons les gouvernements sur les lois propices à l’innovation, accompagnons les entreprises technologiques dans leurs démarches réglementaires, et protégeons les investissements dans le numérique et l’intelligence artificielle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="p-5 mt-5" style="background-color:#012b39">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <p class="fs-4 text-white mb-4">
+            Services Spécialisés <span class="fs-4" style="color:#C2A83E">Complémentaires</span>
+          </p>
+          <p class="fs-6 text-white mb-4">Notre expertise va au-delà des services juridiques traditionnels, en offrant des solutions complémentaires et stratégiques pour soutenir vos projets. Nous mettons à votre disposition des conseils sur-mesure, alliant rigueur juridique et compréhension des enjeux économiques et sociaux, afin de maximiser l'impact de vos initiatives.</p>
+          <ul class="list-unstyled mb-5">
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="500">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Protection de la propriété intellectuelle (brevets, marques, droits d’auteur)
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="1000">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Rédaction et négociation de contrats commerciaux et licences
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="1500">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Conformité RGPD/CCPA pour la protection des données
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="2000">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Optimisation fiscale et stratégie d’évasion légale
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="2500">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Compliance en droit du travail et commercial
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="3000">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Conseil en régulation des plateformes numériques
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="3500">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Accompagnement en matière de licenciement et engagements
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="4000">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Conseil en environnement et négociation de contrats d’exploitation minière/pétrolière
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="4500">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Assistance dans le financement de projets énergétiques
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="5000">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Gestion des contentieux (litiges, appels d’offres, diffamation, droits d’image)
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="5500">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Rédaction de pactes d’actionnaires et accords de confidentialité
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="6000">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Contrats de construction (FIDIC, BOT, BOOT)
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="6500">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Conseil en mise sur le marché de nouveaux médicaments (conformité FDA, EMA, OMS)
+            </li>
+            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="7000">
+              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Négociation de contrats sportifs (clubs, joueurs, sponsors)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include 'components/footer.html' %}
+{% endblock %}

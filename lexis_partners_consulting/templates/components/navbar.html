@@ -43,13 +43,16 @@
           {% get_current_language as LANGUAGE_CODE %}
           {% get_available_languages as LANGUAGES %}
           {% get_language_info_list for LANGUAGES as languages %}
-          <select name="language" onchange="this.form.submit()" class="form-select form-select-sm bg-transparent border-0 text-white">
-            {% for language in languages %}
-              <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
-                {{ language.name_local }}
-              </option>
-            {% endfor %}
-          </select>
+          <div class="language-selector position-relative">
+            <select name="language" onchange="this.form.submit()" class="form-select form-select-sm bg-dark border border-gold text-white rounded-pill px-3 py-1" style="min-width: 80px; font-size: 0.9rem;">
+              {% for language in languages %}
+                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %} class="bg-dark text-white">
+                  {{ language.code|upper }}
+                </option>
+              {% endfor %}
+            </select>
+            <i class="bi bi-globe text-gold position-absolute" style="right: 8px; top: 50%; transform: translateY(-50%); pointer-events: none; font-size: 0.8rem;"></i>
+          </div>
         </form>
       </div>
 
@@ -80,13 +83,16 @@
       {% get_current_language as LANGUAGE_CODE %}
       {% get_available_languages as LANGUAGES %}
       {% get_language_info_list for LANGUAGES as languages %}
-      <select name="language" onchange="this.form.submit()" class="form-select bg-transparent border-light text-white">
-        {% for language in languages %}
-          <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
-            {{ language.name_local }}
-          </option>
-        {% endfor %}
-      </select>
+      <div class="language-selector-mobile position-relative">
+        <select name="language" onchange="this.form.submit()" class="form-select bg-dark border border-gold text-white rounded-pill px-3 py-2" style="font-size: 0.9rem;">
+          {% for language in languages %}
+            <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %} class="bg-dark text-white">
+              {{ language.code|upper }} - {{ language.name_local }}
+            </option>
+          {% endfor %}
+        </select>
+        <i class="bi bi-globe text-gold position-absolute" style="right: 12px; top: 50%; transform: translateY(-50%); pointer-events: none; font-size: 0.9rem;"></i>
+      </div>
     </form>
 
     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">

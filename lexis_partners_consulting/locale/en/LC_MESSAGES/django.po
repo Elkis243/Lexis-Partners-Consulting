@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 06:50+0100\n"
+"POT-Creation-Date: 2025-10-18 07:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgstr ""
 "Our firm supports institutions and businesses in public law and regulations."
 
 #: lexis_partners_consulting/templates/app/index.html:14
-#: lexis_partners_consulting/templates/components/footer.html:43
-#: lexis_partners_consulting/templates/components/footer.html:48
+#: lexis_partners_consulting/templates/components/footer.html:47
+#: lexis_partners_consulting/templates/components/footer.html:52
 #: lexis_partners_consulting/templates/components/navbar.html:35
 #: lexis_partners_consulting/templates/components/navbar.html:110
 msgid "Contactez-nous"
@@ -238,65 +238,57 @@ msgstr "A tailored legal strategy adapted to your needs"
 
 #: lexis_partners_consulting/templates/components/footer.html:14
 msgid ""
-"Nous sommes un cabinet de conseil juridique spécialisé dans le droit public "
-"et la régulation. Nous nous engageons à fournir des conseils juridiques de "
-"haute qualité pour nos clients, en mettant à disposition notre expertise "
-"juridique et nos ressources humaines."
+"\n"
+"                Notre cabinet accompagne les institutions, entreprises et "
+"acteurs publics dans la résolution de leurs enjeux juridiques, en offrant "
+"des conseils spécialisés et stratégiques en droit public, régulation ainsi "
+"qu'en gouvernance. Nous mettons à votre disposition notre expertise "
+"pluridisciplinaire pour répondre à vos besoins spécifiques et accompagner "
+"durablement votre développement.\n"
+"                "
 msgstr ""
+"\n"
+"Our firm supports institutions, businesses, and public actors in resolving their legal challenges, offering specialized and strategic advice in public law, regulation, and governance. We make our multidisciplinary expertise available to meet your specific needs and support your long-term development.\n"
+"                "
 
-#: lexis_partners_consulting/templates/components/footer.html:31
+#: lexis_partners_consulting/templates/components/footer.html:35
 #: lexis_partners_consulting/templates/components/navbar.html:20
 #: lexis_partners_consulting/templates/components/navbar.html:95
 msgid "Accueil"
 msgstr "Home"
 
-#: lexis_partners_consulting/templates/components/footer.html:35
+#: lexis_partners_consulting/templates/components/footer.html:39
 #: lexis_partners_consulting/templates/components/navbar.html:25
 #: lexis_partners_consulting/templates/components/navbar.html:100
 msgid "A propos"
 msgstr "About"
 
-#: lexis_partners_consulting/templates/components/footer.html:39
+#: lexis_partners_consulting/templates/components/footer.html:43
 #: lexis_partners_consulting/templates/components/navbar.html:30
 #: lexis_partners_consulting/templates/components/navbar.html:105
 msgid "Nos services"
 msgstr "Our services"
 
-#: lexis_partners_consulting/templates/components/footer.html:52
+#: lexis_partners_consulting/templates/components/footer.html:56
 msgid "République Démocratique du Congo"
 msgstr "Democratic Republic of Congo"
 
-#: lexis_partners_consulting/templates/components/footer.html:57
-#, fuzzy
-#| msgid "Appelez nous 24/7"
+#: lexis_partners_consulting/templates/components/footer.html:61
 msgid "Appelez-nous 24/7"
 msgstr "Call us 24/7"
 
-#: lexis_partners_consulting/templates/components/footer.html:63
+#: lexis_partners_consulting/templates/components/footer.html:67
 msgid "Notre email"
 msgstr "Our email"
 
-#: lexis_partners_consulting/templates/components/footer.html:68
+#: lexis_partners_consulting/templates/components/footer.html:72
 msgid "Notre horaire d'ouverture"
 msgstr "Our opening hours"
 
-#: lexis_partners_consulting/templates/components/footer.html:68
+#: lexis_partners_consulting/templates/components/footer.html:72
 msgid "Du Lundi au Vendredi de 8H30 à 18H30"
 msgstr "Monday to Friday from 8:30 AM to 6:30 PM"
 
-#: lexis_partners_consulting/templates/components/footer.html:79
-#, fuzzy
-#| msgid "Tous droits réservés."
+#: lexis_partners_consulting/templates/components/footer.html:83
 msgid "Tous nos droits réservés."
 msgstr "All rights reserved."
-
-#, fuzzy
-#~| msgid ""
-#~| "Expertise en droit public pour sécuriser les projets et renforcer les "
-#~| "partenariats"
-#~ msgid ""
-#~ "Expertise en droit public pour sécuriser les projets et renforcer les "
-#~ "partenariats public-privé."
-#~ msgstr ""
-#~ "Public law expertise to secure projects and strengthen public-private "
-#~ "partnerships"

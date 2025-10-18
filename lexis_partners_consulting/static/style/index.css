@@ -163,3 +163,39 @@
 .text-gold {
   color: #ccb12b !important;
 }
+
+/* Styles pour le sélecteur de langue */
+.language-selector select,
+.language-selector-mobile select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.language-selector select:hover,
+.language-selector-mobile select:hover {
+  border-color: #d4af37 !important;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+.language-selector select:focus,
+.language-selector-mobile select:focus {
+  border-color: #d4af37 !important;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+  outline: none;
+}
+
+.language-selector select option,
+.language-selector-mobile select option {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  padding: 8px 12px;
+}
+
+.language-selector select option:hover,
+.language-selector-mobile select option:hover {
+  background-color: #2a2a2a !important;
+}

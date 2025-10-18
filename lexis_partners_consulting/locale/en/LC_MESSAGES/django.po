@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-18 06:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lexis_partners_consulting/templates/app/index.html:12
+msgid ""
+"Notre cabinet accompagne institutions et entreprises en droit public et "
+"régulation."
+msgstr ""
+"Our firm supports institutions and businesses in public law and regulations."
+
+#: lexis_partners_consulting/templates/app/index.html:14
+#: lexis_partners_consulting/templates/components/navbar.html:35
+#: lexis_partners_consulting/templates/components/navbar.html:110
+msgid "Contactez-nous"
+msgstr "Contact us"
+
+#: lexis_partners_consulting/templates/app/index.html:27
+msgid "Découvrez notre cabinet"
+msgstr "Discover our firm"
+
+#: lexis_partners_consulting/templates/app/index.html:28
+msgid ""
+"se positionne comme un acteur de référence en Afrique et à\n"
+"            l’international pour le conseil juridique stratégique en droit "
+"public et la facilitation des relations entre\n"
+"            les gouvernements, institutions publiques et entreprises privées."
+"\" "
+msgstr ""
+"positions itself as a leading player in Africa and internationally for "
+"strategic legal advice in public law and the facilitation of relations "
+"between governments, public institutions, and private companies."
+
+#: lexis_partners_consulting/templates/app/index.html:33
+msgid ""
+"Notre approche couvre l'ensemble des enjeux critiques : marchés publics et "
+"PPP, réformes\n"
+"            administratives, régulation sectorielle et fiscalité. Nous "
+"développons des solutions sur mesure pour\n"
+"            optimiser l'accès aux marchés publics, influencer les réformes "
+"législatives et créer des cadres juridiques\n"
+"            attractifs pour les investissements structurants.\" "
+msgstr ""
+"Our approach covers all the critical issues: public procurement and PPPs, "
+"administrative reforms, sectoral regulation, and taxation. We develop tailor-"
+"made solutions to optimize access to public markets, influence legislative "
+"reforms, and create attractive legal frameworks for major investments."
+
+#: lexis_partners_consulting/templates/app/index.html:37
+msgid "En savoir plus"
+msgstr "Find out more"
+
+#: lexis_partners_consulting/templates/app/index.html:48
+msgid ""
+"Des services juridiques sur mesure pour vous accompagner à chaque étape."
+msgstr "Tailor-made legal services to support you at every stage."
+
+#: lexis_partners_consulting/templates/app/index.html:49
+msgid "Voir tous nos services"
+msgstr "See all our services"
+
+#: lexis_partners_consulting/templates/app/index.html:58
+msgid "Droit des Marchés Publics et Partenariats Public-Privé"
+msgstr "Public Procurement Law and Public-Private Partnerships"
+
+#: lexis_partners_consulting/templates/app/index.html:59
+msgid ""
+"Nous accompagnons les entreprises et institutions dans les marchés\n"
+"              publics, de la passation à la gestion des contentieux.\" "
+msgstr ""
+"We support companies and institutions in public procurement, from contract "
+"award to litigation management."
+
+#: lexis_partners_consulting/templates/app/index.html:68
+msgid "Droit des Investissements et Grands Projets Publics"
+msgstr "Investment Law and Major Public Projects"
+
+#: lexis_partners_consulting/templates/app/index.html:69
+msgid ""
+"Nous accompagnons les investisseurs dans le montage juridique de projets\n"
+"              d’infrastructure et les négociations avec les autorités et "
+"bailleurs.\" "
+msgstr ""
+"We support investors in the legal structuring of infrastructure projects and "
+"negotiations with authorities and donors."
+
+#: lexis_partners_consulting/templates/app/index.html:78
+msgid "Droit de la Gouvernance Publique et Réformes Administratives"
+msgstr "Public Governance Law and Administrative Reforms"
+
+#: lexis_partners_consulting/templates/app/index.html:79
+msgid ""
+"Nous accompagnons les gouvernements dans la modernisation administrative,\n"
+"              la conformité aux normes internationales et la rédaction de "
+"textes législatifs.\" "
+msgstr ""
+"We support governments in administrative modernization, compliance with "
+"international standards, and the drafting of legislative texts."
+
+#: lexis_partners_consulting/templates/app/index.html:93
+msgid "Nos Compétences et Domaines d’Intervention"
+msgstr "Our Skills and Areas of Expertise"
+
+#: lexis_partners_consulting/templates/app/index.html:95
+msgid ""
+"Une expertise juridique pointue <br /> pour accompagner vos décisions clés"
+msgstr "Sharp legal expertise <br /> to support your key decisions"
+
+#: lexis_partners_consulting/templates/app/index.html:101
+msgid "Compétences Juridiques Avancées"
+msgstr "Advanced Legal Skills"
+
+#: lexis_partners_consulting/templates/app/index.html:104
+msgid "Droit public & administratif"
+msgstr "Public & administrative law"
+
+#: lexis_partners_consulting/templates/app/index.html:107
+msgid "Marchés publics & PPP"
+msgstr "Public procurement & PPP"
+
+#: lexis_partners_consulting/templates/app/index.html:110
+msgid "Droit international public"
+msgstr "International public law"
+
+#: lexis_partners_consulting/templates/app/index.html:113
+msgid "Régulation économique"
+msgstr "Economic regulation"
+
+#: lexis_partners_consulting/templates/app/index.html:120
+msgid "Compétences Stratégiques et Politiques"
+msgstr "Strategic and Political Skills"
+
+#: lexis_partners_consulting/templates/app/index.html:124
+msgid "Lobbying & relations institutionnelles"
+msgstr "Lobbying & institutional relations"
+
+#: lexis_partners_consulting/templates/app/index.html:127
+msgid "Négociation gouvernementale"
+msgstr "Government negotiation"
+
+#: lexis_partners_consulting/templates/app/index.html:130
+msgid "Gestion de crise"
+msgstr "Crisis management"
+
+#: lexis_partners_consulting/templates/app/index.html:133
+msgid "Contentieux stratégiques"
+msgstr "Strategic litigation"
+
+#: lexis_partners_consulting/templates/app/index.html:140
+msgid "Compétences en Gestion et Développement"
+msgstr "Management and Development Skills"
+
+#: lexis_partners_consulting/templates/app/index.html:144
+msgid "Développement commercial"
+msgstr "Business development"
+
+#: lexis_partners_consulting/templates/app/index.html:147
+msgid "Communication & image publique"
+msgstr "Communication & public image"
+
+#: lexis_partners_consulting/templates/app/index.html:150
+msgid "Veille stratégique"
+msgstr "Strategic monitoring"
+
+#: lexis_partners_consulting/templates/app/index.html:153
+msgid "Intelligence économique"
+msgstr "Economic intelligence"
+
+#: lexis_partners_consulting/templates/app/index.html:167
+msgid "Notre approche Juridique"
+msgstr "Our Legal Approach"
+
+#: lexis_partners_consulting/templates/app/index.html:168
+msgid ""
+"Nous croyons fermement que le droit public et la régulation sont des "
+"leviers\n"
+"          stratégiques pour le développement économique et social. Notre "
+"cabinet s'engage à fournir des conseils\n"
+"          juridiques de haute qualité, adaptés aux besoins spécifiques de "
+"nos clients.\" "
+msgstr ""
+"We firmly believe that public law and regulation are strategic levers for "
+"economic and social development. Our firm is committed to providing high-"
+"quality legal advice, tailored to the specific needs of our clients."
+
+#: lexis_partners_consulting/templates/app/index.html:173
+msgid ""
+"Des avocats spécialisés dans\n"
+"            chaque\n"
+"            domaine du droit"
+msgstr "Lawyers specialized in every area of law"
+
+#: lexis_partners_consulting/templates/app/index.html:178
+msgid ""
+"Un suivi personnalisé tout au long\n"
+"            de\n"
+"            votre dossier"
+msgstr "Personalized follow-up throughout your case"
+
+#: lexis_partners_consulting/templates/app/index.html:183
+msgid ""
+"Une transparence totale sur les\n"
+"            honoraires et les démarches\n"
+"            honoraires et les démarches"
+msgstr "Total transparency regarding fees and procedures"
+
+#: lexis_partners_consulting/templates/app/index.html:188
+msgid ""
+"Une réactivité à toute épreuve\n"
+"            pour\n"
+"            répondre à vos urgences"
+msgstr ""
+"Responsiveness that stands up to any challenge to address your urgent needs"
+
+#: lexis_partners_consulting/templates/app/index.html:193
+msgid ""
+"Une stratégie juridique sur mesure\n"
+"            adaptée à vos besoins"
+msgstr "A tailored legal strategy adapted to your needs"
+
+#: lexis_partners_consulting/templates/components/navbar.html:20
+#: lexis_partners_consulting/templates/components/navbar.html:95
+msgid "Accueil"
+msgstr "Home"
+
+#: lexis_partners_consulting/templates/components/navbar.html:25
+#: lexis_partners_consulting/templates/components/navbar.html:100
+msgid "A propos"
+msgstr "About"
+
+#: lexis_partners_consulting/templates/components/navbar.html:30
+#: lexis_partners_consulting/templates/components/navbar.html:105
+msgid "Nos services"
+msgstr "Our services"

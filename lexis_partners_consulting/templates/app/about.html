@@ -2,83 +2,89 @@
 {% load static %}
 
 {% block base %}
-  {% include 'components/navbar.html' %}
-  <header class="hero-about">
-    <div class="container d-flex align-items-center h-100">
-      <div class="row justify-content-center">
-        <div class="col-md-10 px-4">
-          <h1 class="text-light" data-aos="fade-down" data-aos-duration="1000">Lexis partners<br /> consulting</h1>
-          <p class="text-white mb-4 w-75" data-aos="fade-down" data-aos-duration="1000">Cabinet en droit public, régulation et facilitation des affaires entre États et entreprises.</p>
+{% include 'components/navbar.html' %}
+<header class="other-hero">
+  <div class="container d-flex align-items-center h-100">
+    <div class="row justify-content-center">
+      <div class="col-md-10 px-5">
+        <h1 class="text-light" data-aos="fade-down" data-aos-duration="1000">Cabinet d’excellence en droit public et régulation</h1>
+        <p class="text-white mb-4 w-75" data-aos="fade-down" data-aos-duration="1000">Notre cabinet accompagne institutions et entreprises en droit public et régulation.</p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container mt-5 px-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="row justify-content-center align-items-center gy-3">
+        <div class="col-12 col-md-6">
+          <img src="{% static 'images/avocat.webp' %}" alt="Image" class="img-fluid" />
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="mb-3 fs-2 text-custom-color fw-medium">A propos de nous</p>
+          <p class="fs-6">Lexis Partners Consulting est un cabinet d'excellence spécialisé en droit public et
+            régulation, basé en RDC avec une expertise reconnue en Afrique. Notre équipe
+            pluridisciplinaire combine des compétences juridiques pointues avec une connaissance approfondie des enjeux
+            politiques et économiques contemporains. Nous accompagnons les gouvernements, institutions publiques et
+            investisseurs privés dans la conception et la mise en œuvre de cadres juridiques optimisés.</p>
+          <p class="fs-6">Le cabinet offre une expertise pointue dans des domaines clés tels que :</p>
+          <ul>
+            <li>Les marchés publics et les partenariats public-privé</li>
+            <li>Le droit des investissements et des grands projets publics</li>
+            <li>La gouvernance publique, les réformes administratives et la régulation</li>
+            <li>Les finances publiques et la fiscalité</li>
+            <li>Les relations entre le gouvernement, le parlement et les acteurs économiques</li>
+          </ul>
         </div>
       </div>
     </div>
-  </header>
-  <div class="container mt-5 px-5">
+  </div>
+</div>
+<div class="mt-5 bg-light py-5">
+  <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10">
-        <div class="row justify-content-center align-items-center gy-3">
-          <div class="col-12 col-md-6">
-            <img src="{% static 'images/avocat.webp' %}" alt="Image" class="img-fluid" />
-          </div>
-          <div class="col-12 col-md-6">
-            <p class="mb-3 fs-4" style="color:#263554;">Qui sommes-nous?</p>
-            <p class="fs-6 text-muted">Lexis Partners Consulting est un cabinet d'excellence spécialisé en droit public et régulation, opérant à l'échelle internationale avec une expertise reconnue en Afrique.</p>
-
-            <p class="fs-6 text-muted">Notre équipe pluridisciplinaire combine des compétences juridiques pointues avec une connaissance approfondie des enjeux politiques et économiques contemporains. Nous accompagnons les gouvernements, institutions publiques et investisseurs privés dans la conception et la mise en œuvre de cadres juridiques optimisés.</p>
-            <p class="fs-6 text-muted">Le cabinet offre une expertise pointue dans des domaines clés tels que :</p>
-            <ul>
-              <li>Les marchés publics et les partenariats public-privé (PPP)</li>
-              <li>Le droit des investissements et des grands projets publics</li>
-              <li>La gouvernance publique, les réformes administratives et la régulation</li>
-              <li>Les finances publiques et la fiscalité</li>
-              <li>Les relations entre le gouvernement, le parlement et les acteurs économiques</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mt-5 bg-light py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <div class="row justify-content-center align-items-stretch gy-3">
-            <div class="col-md-6 d-flex">
-              <div class="container p-5 bg-white rounded-3 h-100 d-flex flex-column py-4">
-                <div class="d-flex justify-content-center">
-                  <i class="fas fa-bullseye fs-2" style="color:#C2A83E"></i>
-                </div>
-                <p class="mb-3 fs-4 text-center" style="color:#263554;">Notre mission</p>
-                <p class="text-center flex-grow-1 p">Offrir des solutions juridiques et stratégiques innovantes pour faciliter les interactions entre l’État et le secteur privé, en garantissant transparence, efficacité et conformité dans les opérations et réformes publiques</p>
+        <div class="row justify-content-center align-items-stretch gy-3">
+          <div class="col-md-6 d-flex">
+            <div class="container p-5 bg-white rounded-3 h-100 d-flex flex-column py-4">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-bullseye fs-2" style="color:#C2A83E"></i>
               </div>
+              <p class="mb-3 fs-4 text-center text-custom-color fw-medium">Notre mission</p>
+              <p class="text-center flex-grow-1 p">Offrir des solutions juridiques et stratégiques innovantes pour
+                faciliter les interactions entre l’État et le secteur privé, en garantissant transparence, efficacité et
+                conformité dans les opérations et réformes publiques</p>
             </div>
-            <div class="col-md-6 d-flex">
-              <div class="container p-5 bg-white rounded-3 h-100 d-flex flex-column py-4">
-                <div class="d-flex justify-content-center">
-                  <i class="fas fa-eye fs-2" style="color:#C2A83E"></i>
-                </div>
-                <p class="mb-3 fs-4 text-center" style="color:#263554;">Notre vision</p>
-                <p class="text-center flex-grow-0">Devenir le partenaire incontournable en matière de conseil en droit public et de facilitation des affaires pour les gouvernements et les investisseurs, tout en renforçant la gouvernance et la compétitivité économique en Afrique et au-delà.</p>
+          </div>
+          <div class="col-md-6 d-flex">
+            <div class="container p-5 bg-white rounded-3 h-100 d-flex flex-column py-4">
+              <div class="d-flex justify-content-center">
+                <i class="fas fa-eye fs-2" style="color:#C2A83E"></i>
               </div>
+              <p class="mb-3 fs-4 text-center text-custom-color fw-medium">Notre vision</p>
+              <p class="text-center flex-grow-0">Devenir le partenaire incontournable en matière de conseil en droit
+                public et de facilitation des affaires pour les gouvernements et les investisseurs, tout en renforçant
+                la gouvernance et la compétitivité économique en Afrique et au-delà.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="p-5 text-white" style="background-color: #263554;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10 text-center">
-          <p class="fs-4">
-            Prêt à transformer vos enjeux <br /> juridiques en opportunités ?
-          </p>
-          <p>Contactez-nous pour une consultation stratégique avec nos experts.</p>
-          <a href="{% url 'contact' %}" class="btn custom-btn">Prendre rendez-vous</a>
-        </div>
+</div>
+<div class="p-5 text-white" style="background-color: #012b39;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <p class="fs-4">
+          Prêt à transformer vos enjeux <br /> juridiques en opportunités ?
+        </p>
+        <p>Contactez-nous pour une consultation stratégique avec nos experts.</p>
+        <a href="{% url 'contact' %}" class="btn custom-btn">Prendre rendez-vous</a>
       </div>
     </div>
   </div>
+</div>
 
-  {% include 'components/footer.html' %}
+{% include 'components/footer.html' %}
 {% endblock %}

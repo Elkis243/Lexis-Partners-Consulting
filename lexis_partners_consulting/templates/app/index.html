@@ -1,184 +1,202 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% load i18n %}
 {% block base %}
-  {% include 'components/navbar.html' %}
+{% include 'components/navbar.html' %}
 
-  <header class="hero">
-    <div class="container d-flex align-items-center h-100">
-      <div class="row justify-content-center">
-        <div class="col-md-10 px-4">
-          <h1 class="text-light" data-aos="fade-down" data-aos-duration="1000">Au cœur du droit public,<br /> au service des relations stratégiques.</h1>
-          <p class="text-white mb-4 w-75" data-aos="fade-down" data-aos-duration="1000">Notre cabinet, spécialisé en droit public et régulation, accompagne institutions et entreprises dans la sécurisation de projets complexes et la facilitation des relations entre acteurs publics et privés.</p>
-          <a class="btn custom-btn px-4 py-2 fw-medium" href="{% url 'contact' %}" data-aos="fade-right" data-aos-duration="1600">Prendre rendez-vous</a>
-        </div>
+<header class="hero">
+  <div class="container d-flex align-items-center h-100">
+    <div class="row justify-content-center">
+      <div class="col-md-10 px-5">
+        <h1 class="text-light" data-aos="fade-down" data-aos-duration="1000">Lexis partners consulting</h1>
+        <p class="text-white mb-4 w-75" data-aos="fade-down" data-aos-duration="1000">{% trans "Notre cabinet accompagne institutions et entreprises en droit public et régulation." %}</p>
+        <a class="btn custom-btn px-4 py-2 fw-medium" href="{% url 'contact' %}" data-aos="fade-right"
+          data-aos-duration="1600">{% trans "Contactez-nous" %}</a>
       </div>
     </div>
-  </header>
-  <div class="container mt-5 px-5">
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="row justify-content-center align-items-center gy-3">
-          <div class="col-12 col-md-6">
-            <img src="{% static 'images/avocate.webp' %}" alt="Image" class="img-fluid" />
-          </div>
-          <div class="col-12 col-md-6">
-            <p class="mb-3 fs-4" style="color:#263554;">Qui sommes-nous?</p>
-            <p class="fs-6 text-muted">Lexis partners consulting se positionne comme un acteur de référence en Afrique et à l’international pour le conseil juridique stratégique en droit public et la facilitation des relations entre les gouvernements, institutions publiques et entreprises privées.</p>
+  </div>
+</header>
+<div class="container mt-5 px-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="row justify-content-center align-items-center gy-3">
+        <div class="col-12 col-md-6">
+          <img src="{% static 'images/avocate.webp' %}" alt="Image" class="img-fluid" />
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="mb-3 fs-2 text-custom-color fw-medium">{% trans "Découvrez notre cabinet" %}</p>
+          <p class="fs-6">Lexis partners consulting {% blocktrans %}se positionne comme un acteur de référence en Afrique et à
+            l’international pour le conseil juridique stratégique en droit public et la facilitation des relations entre
+            les gouvernements, institutions publiques et entreprises privées." {% endblocktrans %}</p>
 
-            <p class="fs-6 text-muted">Notre approche couvre l'ensemble des enjeux critiques : marchés publics et PPP, réformes administratives, régulation sectorielle et fiscalité. Nous développons des solutions sur mesure pour optimiser l'accès aux marchés publics, influencer les réformes législatives et créer des cadres juridiques attractifs pour les investissements structurants.</p>
-            <a href="" class="btn custom-btn">En savoir plus</a>
+
+          <p class="fs-6">{% blocktrans %}Notre approche couvre l'ensemble des enjeux critiques : marchés publics et PPP, réformes
+            administratives, régulation sectorielle et fiscalité. Nous développons des solutions sur mesure pour
+            optimiser l'accès aux marchés publics, influencer les réformes législatives et créer des cadres juridiques
+            attractifs pour les investissements structurants." {% endblocktrans %}</p>
+          <a href="{% url 'about' %}" class="btn custom-btn">{% trans "En savoir plus" %}</a>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+<div class="mt-5 px-5 py-5 text-white custom-bg-color">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="row justify-content-center align-content-center mb-5">
+        <div class="col-md-5 text-center">
+          <p class="fs-2">{% trans "Des services juridiques sur mesure pour vous accompagner à chaque étape." %}</p>
+          <a href="{% url 'services' %}" class="btn custom-btn">{% trans "Voir tous nos services" %}</a>
+        </div>
+      </div>
+      <div class="row gy-3 mt-5">
+        <div class="col-md-4 d-flex">
+          <div class="container rounded-2 d-flex flex-column h-100 py-4">
+            <div class="d-flex justify-content-center mb-3">
+              <i class="bi bi-briefcase fs-1"></i>
+            </div>
+            <p class="text-center fw-medium fs-5 mb-3"> {% trans "Droit des Marchés Publics et Partenariats Public-Privé" %}</p>
+            <p class="text-center flex-grow-1">{% blocktrans %}Nous accompagnons les entreprises et institutions dans les marchés
+              publics, de la passation à la gestion des contentieux." {% endblocktrans %}</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="container rounded-2 d-flex flex-column h-100 py-4" class="custom-active-card-service">
+            <div class="d-flex justify-content-center mb-3">
+              <i class="bi bi-bank fs-1"></i>
+            </div>
+            <p class="text-center fw-medium fs-5 mb-3">{% trans "Droit des Investissements et Grands Projets Publics" %}</p>
+            <p class="text-center flex-grow-1">{% blocktrans %}Nous accompagnons les investisseurs dans le montage juridique de projets
+              d’infrastructure et les négociations avec les autorités et bailleurs." {% endblocktrans %}</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <div class="container bg-service rounded-2 d-flex flex-column h-100 py-4" class="custom-active-card-service">
+            <div class="d-flex justify-content-center mb-3">
+              <i class="bi bi-people fs-1"></i>
+            </div>
+            <p class="text-center fs-5 fw-medium mb-3">{% trans "Droit de la Gouvernance Publique et Réformes Administratives" %}</p>
+            <p class="text-center flex-grow-1">{% blocktrans %}Nous accompagnons les gouvernements dans la modernisation administrative,
+              la conformité aux normes internationales et la rédaction de textes législatifs." {% endblocktrans %}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="mt-5 px-5 py-5 text-white" style="background-color:#012b39">
+</div>
+
+<section class="py-5 mt-5">
+  <div class="container px-5">
     <div class="row justify-content-center">
       <div class="col-md-10">
-        <div class="row justify-content-center align-content-center mb-5">
-          <div class="col-md-5 text-center">
-            <p class="fs-4">Des services juridiques sur mesure pour vous accompagner à chaque étape.</p>
-            <a href="" class="btn custom-btn">Voir tous nos services</a>
-          </div>
-        </div>
-        <div class="row gy-3 mt-5">
-          <div class="col-md-4 d-flex">
-            <div class="container rounded-2 d-flex flex-column h-100 py-4" style="background-color: rgba(16, 22, 39, 0.1);">
-              <div class="d-flex justify-content-center mb-3">
-                <i class="fas fa-briefcase fs-1"></i>
-              </div>
-              <p class="text-center fw-medium fs-5 mb-3">Droit des Marchés Publics et Partenariats Public-Privé (PPP)</p>
-              <p class="text-center flex-grow-1">Nous accompagnons les entreprises et institutions dans les marchés publics, de la passation à la gestion des contentieux.</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="container rounded-2 d-flex flex-column h-100 py-4" style="background-color: rgba(16, 22, 39, 0.1);">
-              <div class="d-flex justify-content-center mb-3">
-                <i class="fas fa-people-group fs-1"></i>
-              </div>
-              <p class="text-center fw-medium fs-5 mb-3">Droit des Investissements et Grands Projets Publics</p>
-              <p class="text-center flex-grow-1">Nous accompagnons les investisseurs dans le montage juridique de projets d’infrastructure et les négociations avec les autorités et bailleurs.</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="container bg-service rounded-2 d-flex flex-column h-100 py-4" style="background-color: rgba(16, 22, 39, 0.1);">
-              <div class="d-flex justify-content-center mb-3">
-                <i class="fas fa-diagram-project fs-1"></i>
-              </div>
-              <p class="text-center fs-5 fw-medium mb-3">Droit de la Gouvernance Publique et Réformes Administratives</p>
-              <p class="text-center flex-grow-1">Nous accompagnons les gouvernements dans la modernisation administrative, la conformité aux normes internationales et la rédaction de textes législatifs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="py-5 mt-5">
-    <div class="container px-5">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <div class="d-flex flex-column align-items-center text-center mb-5">
-            <p style="color:#263554;" class="fs-4 mb-0">Nos Compétences & Domaines d’Intervention</p>
-            <p class="fs-6">
-              Une expertise juridique pointue <br /> pour accompagner vos décisions clés
-            </p>
-          </div>
-          <div class="row g-4 align-items-stretch text-white">
-            <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="1000">
-              <div class="bg-dark p-4 rounded w-100 d-flex flex-column">
-                <h4 class="text-center fw-medium fs-5 mb-4">Compétences Juridiques Avancées</h4>
-                <ul class="list-unstyled flex-grow-1">
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Droit public & administratif
-                  </li>
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Marchés publics & PPP
-                  </li>
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Droit international public
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Régulation économique
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="1500">
-              <div class="bg-dark p-4 rounded w-100 d-flex flex-column">
-                <h4 class="text-center fw-medium fs-5 mb-4">Compétences Stratégiques et Politiques</h4>
-
-                <ul class="list-unstyled flex-grow-1">
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Lobbying & relations institutionnelles
-                  </li>
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Négociation gouvernementale
-                  </li>
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Gestion de crise
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Contentieux stratégiques
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2000">
-              <div class="bg-dark p-4 rounded w-100 d-flex flex-column">
-                <h5 class="text-center fw-mediumfs-5 mb-4">Compétences en Gestion et Développement</h5>
-
-                <ul class="list-unstyled flex-grow-1">
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Développement commercial
-                  </li>
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Communication & image publique
-                  </li>
-                  <li class="mb-2">
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Veille stratégique
-                  </li>
-                  <li>
-                    <i class="bi bi-check-circle-fill text-success me-2"></i> Intelligence économique
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="p-5 mt-5" style="background-color:#012b39">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <p class="fs-4 text-white mb-4">
-            Notre <span class="fs-4" style="color:#C2A83E">approche</span> Juridique !
+        <div class="d-flex flex-column align-items-center text-center mb-5">
+          <p class="fs-2 mb-0 text-custom-color">{% trans "Nos Compétences et Domaines d’Intervention" %}</p>
+          <p class="fs-6">
+            {% trans "Une expertise juridique pointue <br /> pour accompagner vos décisions clés" %}
           </p>
-          <p class="fs-6 text-white mb-4">Nous croyons fermement que le droit public et la régulation sont des leviers stratégiques pour le développement économique et social. Notre cabinet s'engage à fournir des conseils juridiques de haute qualité, adaptés aux besoins spécifiques de nos clients.</p>
-          <ul class="list-unstyled mb-5">
-            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="500">
-              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Des avocats spécialisés dans chaque domaine du droit
-            </li>
-            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="1000">
-              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Un suivi personnalisé tout au long de votre dossier
-            </li>
-            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="1500">
-              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Une transparence totale sur les honoraires et les démarches
-            </li>
-            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="2000">
-              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Une réactivité à toute épreuve pour répondre à vos urgences
-            </li>
-            <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="2500">
-              <i class="fas fa-check position-absolute start-0 fa-check-custom"></i>Une stratégie juridique sur mesure adaptée à vos besoins
-            </li>
-          </ul>
-          <a href="{% url 'services' %}" class="btn custom-btn">Nous découvrir</a>
+        </div>
+        <div class="row g-4 align-items-stretch text-white">
+          <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="bg-dark p-4 rounded w-100 d-flex flex-column">
+              <h4 class="text-center fw-medium fs-5 mb-4">{% trans "Compétences Juridiques Avancées" %}</h4>
+              <ul class="list-unstyled flex-grow-1">
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Droit public & administratif" %}
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Marchés publics & PPP" %}
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Droit international public" %}
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Régulation économique" %}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="bg-dark p-4 rounded w-100 d-flex flex-column">
+              <h4 class="text-center fw-medium fs-5 mb-4">{% trans "Compétences Stratégiques et Politiques" %}</h4>
+
+              <ul class="list-unstyled flex-grow-1">
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Lobbying & relations institutionnelles" %}
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Négociation gouvernementale" %}
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Gestion de crise" %}
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Contentieux stratégiques" %}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="bg-dark p-4 rounded w-100 d-flex flex-column">
+              <p class="text-center fw-mediummb-4 fs-2">{% trans "Compétences en Gestion et Développement" %}</p>
+
+              <ul class="list-unstyled flex-grow-1">
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Développement commercial" %}
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Communication & image publique" %}
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Veille stratégique" %}
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill text-success me-2"></i> {% trans "Intelligence économique" %}
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  {% include 'components/footer.html' %}
+  </div>
+</section>
+<section class="p-5 custom-bg-color">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <p class="fs-2 fw-medium text-white mb-4">{% trans "Notre approche Juridique" %}</p>
+        <p class="fs-6 text-white mb-4">{% blocktrans %}Nous croyons fermement que le droit public et la régulation sont des leviers
+          stratégiques pour le développement économique et social. Notre cabinet s'engage à fournir des conseils
+          juridiques de haute qualité, adaptés aux besoins spécifiques de nos clients." {% endblocktrans %}</p>
+        <ul class="list-unstyled mb-5">
+          <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="500">
+            <i class="bi bi-check-lg position-absolute start-0 custom-color-icon "></i> {% blocktrans %}Des avocats spécialisés dans
+            chaque
+            domaine du droit{% endblocktrans %}
+          </li>
+          <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="1000">
+            <i class="bi bi-check-lg position-absolute start-0 custom-color-icon"></i> {% blocktrans %}Un suivi personnalisé tout au long
+            de
+            votre dossier{% endblocktrans %}
+          </li>
+          <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="1500">
+            <i class="bi bi-check-lg position-absolute start-0 custom-color-icon"></i> {% blocktrans %}Une transparence totale sur les
+            honoraires et les démarches
+            honoraires et les démarches{% endblocktrans %}
+          </li>
+          <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="2000">
+            <i class="bi bi-check-lg position-absolute start-0 custom-color-icon"></i> {% blocktrans %}Une réactivité à toute épreuve
+            pour
+            répondre à vos urgences{% endblocktrans %}
+          </li>
+          <li class="text-white position-relative mb-3 ps-4" data-aos="fade-up" data-aos-duration="2500">
+            <i class="bi bi-check-lg position-absolute start-0 custom-color-icon"></i> {% blocktrans %}Une stratégie juridique sur mesure
+            adaptée à vos besoins{% endblocktrans %}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% include 'components/footer.html' %}
 {% endblock %}

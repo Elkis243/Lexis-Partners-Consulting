@@ -1,47 +1,115 @@
 {% load static %}
-<nav class="navbar navbar-expand-md sticky-top mb-5 position-absolute w-100 bg-transparent" style="z-index: 1000">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-between w-100"> 
+{% load i18n %}
+
+<nav class="navbar navbar-expand-md sticky-top position-absolute w-100 bg-transparent" style="z-index: 1000">
+  <div class="container mt-3 px-5">
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <!-- Logo -->
       <div class="d-flex align-items-center">
-        <a href="{% url 'index' %}" class="navbar-brand">
-          <img src="{% static 'images/remove.png' %}" alt="Image" class="" height="120" width="auto">
+        <a href="{% url 'index' %}" class="navbar-brand m-0 p-0 d-flex align-items-center">
+          <span class="fw-bold text-gold">LEXIS</span>
+          <span class="text-white ms-1">Partners Consulting</span>
         </a>
       </div>
-      <button class="navbar-toggler shadow-none border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-1"></i>
-      </button>
-    </div>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" style="background-color: rgba(1, 1, 1, 0.832);">
-      <div class="offcanvas-header">
-        <a href="" class="navbar-brand">
-           <img src="{% static 'images/remove.png' %}" alt="Image" class="" height="120" width="auto">
-        </a>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+      <!-- Menu principal (tablette et desktop) -->
+      <div class="d-none d-md-flex align-items-center">
+        <ul class="navbar-nav me-4">
           <li class="nav-item">
-            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white rounded-2 {% if page == 'Accueil' %}active-link{% endif %}" href="{% url 'index' %}">
-              Home
+            <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Accueil' %}active-link{% endif %}" href="{% url 'index' %}">
+              {% trans "Accueil" %}
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white text-nowrap rounded-2 {% if page == 'Qui sommes-nous ?' %}active-link{% endif %}" href="{% url 'about' %}">
-              Qui sommes-nous ?
+            <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Qui sommes-nous ?' %}active-link{% endif %}" href="{% url 'about' %}">
+              {% trans "A propos" %}
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white rounded-2 {% if page == 'Nos services' %}active-link{% endif %}" href="{% url 'services' %}">
-              Services
+            <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Nos services' %}active-link{% endif %}" href="{% url 'services' %}">
+              {% trans "Nos services" %}
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 p-1 position-relative py-2 px-3 text-white rounded-2 {% if page == 'Contact' %}active-link{% endif %}" href="{% url 'contact' %}">
-              Contact
+            <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Contact' %}active-link{% endif %}" href="{% url 'contact' %}">
+              {% trans "Contactez-nous" %}
             </a>
           </li>
         </ul>
+
+        <!-- Sélecteur de langue -->
+        <form action="{% url 'set_language' %}" method="post" class="d-flex align-items-center">
+          {% csrf_token %}
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          {% get_language_info_list for LANGUAGES as languages %}
+          <select name="language" onchange="this.form.submit()" class="form-select form-select-sm bg-transparent border-0 text-white">
+            {% for language in languages %}
+              <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                {{ language.name_local }}
+              </option>
+            {% endfor %}
+          </select>
+        </form>
       </div>
+
+      <!-- Bouton burger pour mobile -->
+      <button class="navbar-toggler d-md-none shadow-none border-0 text-white" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1"></i>
+      </button>
     </div>
   </div>
 </nav>
+
+<!-- Menu Offcanvas (mobile) -->
+<div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar">
+  <div class="offcanvas-header mt-3 px-5">
+    <a href="{% url 'index' %}" class="navbar-brand m-0 p-0">
+      <span class="fw-bold text-gold">LEXIS</span>
+      <span class="text-white ms-1">Partners Consulting</span>
+    </a>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body px-5">
+    <!-- Sélecteur de langue mobile -->
+    <form action="{% url 'set_language' %}" method="post" class="mb-4">
+      {% csrf_token %}
+      {% get_current_language as LANGUAGE_CODE %}
+      {% get_available_languages as LANGUAGES %}
+      {% get_language_info_list for LANGUAGES as languages %}
+      <select name="language" onchange="this.form.submit()" class="form-select bg-transparent border-light text-white">
+        {% for language in languages %}
+          <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+            {{ language.name_local }}
+          </option>
+        {% endfor %}
+      </select>
+    </form>
+
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item mb-3">
+        <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Accueil' %}active-link{% endif %}" href="{% url 'index' %}">
+          {% trans "Accueil" %}
+        </a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Qui sommes-nous ?' %}active-link{% endif %}" href="{% url 'about' %}">
+          {% trans "A propos" %}
+        </a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Nos services' %}active-link{% endif %}" href="{% url 'services' %}">
+          {% trans "Nos services" %}
+        </a>
+      </li>
+      <li class="nav-item mb-3">
+        <a class="nav-link mx-2 p-1 py-2 px-3 text-white rounded-2 {% if page == 'Contact' %}active-link{% endif %}" href="{% url 'contact' %}">
+          {% trans "Contactez-nous" %}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,53 +1,69 @@
 {% load static %}
-<footer class="p-5 text-white" style="background-color:#08131D">
+<footer class="p-5 text-white" style="background-color:#0e0f10">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12">
         <div class="row justify-content-center gy-4">
-          <div class="col-md-4">
-             <img src="{% static 'images/remove.png' %}" alt="Image" class="" height="120" width="auto">
-            <p class="mb-3">Expertise en droit public pour sécuriser les projets et renforcer les partenariats public-privé.</p>
+          <div class="col-md-3 mx-5">
+            <div class="logo-text mb-3 mt-4">
+              <p class="mb-0">
+                <span class="logo-main">LEXIS</span> <span class="logo-sub">Partners Consulting</span>
+              </p>
+            </div>
+            <p class="mb-3">Expertise en droit public pour sécuriser les projets et renforcer les partenariats
+              public-privé.</p>
             <div class="d-flex gap-3 social-links">
-              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
+                  class="bi bi-linkedin"></i></a>
+              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
+                  class="bi bi-twitter-x"></i></a>
+              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
+                  class="bi bi-tiktok"></i></a>
             </div>
           </div>
           <div class="col-md-4">
             <h3 class="fs-4 mb-3" style="color:#C2A83E">Navigation</h3>
             <ul class="list-unstyled footer-links">
               <li class="mb-2">
-                <a href="{% url 'index' %}" class="text-white text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Home</a>
+                <a href="{% url 'index' %}" class="text-white text-decoration-none d-flex align-items-center"><i
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Home</a>
               </li>
               <li class="mb-2">
-                <a href="{% url 'about' %}" class="text-white text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Qui sommes-nous ?</a>
+                <a href="{% url 'about' %}" class="text-white text-decoration-none d-flex align-items-center"><i
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Qui sommes-nous ?</a>
               </li>
               <li class="mb-2">
-                <a href="{% url 'services' %}" class="text-white text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Services</a>
+                <a href="{% url 'services' %}" class="text-white text-decoration-none d-flex align-items-center"><i
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Services</a>
               </li>
               <li class="mb-2">
-                <a href="{% url 'contact' %}" class="text-white text-decoration-none d-flex align-items-center"><i class="fas fa-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Contact</a>
+                <a href="{% url 'contact' %}" class="text-white text-decoration-none d-flex align-items-center"><i
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> Contact</a>
               </li>
             </ul>
           </div>
           <div class="col-md-4">
             <h3 class="fs-4 mb-3" style="color:#C2A83E">Contact</h3>
             <div class="mb-3 d-flex">
-              <i class="fa-solid fa-house me-3 mt-1" style="color:#C2A83E"></i>
+              <i class="bi bi-house me-3 mt-1" style="color:#C2A83E"></i>
               <p>
-                Lorem ipsum, dolor sit amet <br /> consectetur adipisicing
+                Kinshasa, <br /> République Démocratique du Congo
               </p>
             </div>
             <div class="mb-3 d-flex">
-              <i class="fas fa-phone me-3 mt-1" style="color:#C2A83E"></i>
-              <a href="tel:+243813352409" class="text-decoration-none text-white" target="_blank">Appelez nous 24/7 <br /> <strong>+ 243 813 352 409</strong></a>
+              <i class="bi bi-telephone me-3 mt-1" style="color:#C2A83E"></i>
+              <a href="tel:+243813352409" class="text-decoration-none text-white" target="_blank">Appelez nous 24/7
+                <br /> <strong>+ 243 813 352 409</strong></a>
             </div>
             <div class="mb-3 d-flex">
-              <i class="fas fa-envelope me-3 mt-1" style="color:#C2A83E"></i>
-              <a href="mailto:contact@lexispartners.com" class="text-decoration-none text-white" target="_blank">Notre Email <br /><strong>contact@lexispartners.com</strong></a>
+              <i class="bi bi-envelope me-3 mt-1" style="color:#C2A83E"></i>
+              <a href="mailto:contact@lexispartners.com" class="text-decoration-none text-white" target="_blank">Notre
+                Email <br /><strong>contact@lexispconsulting.com</strong></a>
             </div>
             <div class="mb-3 d-flex">
-              <i class="fas fa-clock me-3 mt-1" style="color:#C2A83E"></i>
+              <i class="bi bi-clock me-3 mt-1" style="color:#C2A83E"></i>
               <p>
                 Ouvert <br /> <strong>Du Lundi au Vendredi de 8H30 à 18H30</strong>
               </p>
@@ -60,7 +76,7 @@
 
   <div class="text-center py-3" style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem;">
     <p class="mb-0 small">
-      &copy;{% now 'Y' %}Lexis partners consulting. Tous droits réservés.
+      &copy;{% now 'Y' %} Lexis partners consulting. <br>Tous droits réservés.
     </p>
   </div>
 </footer>

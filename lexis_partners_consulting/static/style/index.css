@@ -1,12 +1,11 @@
 :root {
-  --gold: #C2A83E;
-  --high-gold: #937f2c;
+  --gold: #4f4b1e;
+  --high-gold: rgb(75, 63, 11);
 }
 
-
 * {
-  font-family: "Outfit", serif;
-  font-size: 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12.5px;
 }
 
 .active-link,
@@ -14,22 +13,49 @@
   background-color: var(--gold);
 }
 
+/* Navbar toggler transition */
+.navbar-toggler {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
 
 .hero {
-  height: 95dvh;
+  height: 80dvh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 4, 9, 0.8)),
     url('../images/hero-home.webp');
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
   background-position: bottom bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero-about {
-  height: 70dvh;
-  background-color: #012b39;
+.other-hero {
+  background-color: #012b39 !important;
   clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70dvh;
 }
 
+/* Shorter hero on small screens */
+@media (max-width: 576px) {
+
+  .hero,
+  .hero-about {
+    height: 60dvh;
+    background-position: bottom bottom;
+  }
+}
+
+.text-custom-color {
+  color: #235363 !important;
+}
 
 .custom-btn {
   background-color: var(--gold) !important;
@@ -42,11 +68,6 @@
 
 .custom-btn:hover {
   background-color: var(--high-gold) !important;
-}
-
-.fa-check-custom {
-  color: var(--gold);
-  top: 3px;
 }
 
 
@@ -75,15 +96,70 @@
 }
 
 .custom-color-icon {
-  color: var(--gold) !important;
+  color: #ccb12b !important;
 }
 
-.custom-card-service{
+.custom-bg-color {
+  background-color: #012b39 !important;
+}
+
+.custom-active-card-service {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.custom-card-service {
   background-color: rgba(240, 240, 240, 0.702);
 }
 
-.custom-card-service:hover{
+.custom-card-service:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.logo-main {
+  color: #ccb12b;
+}
+
+.logo-sub {
+  color: #6d6d6d;
+}
+
+/* Offcanvas styles */
+.custom-offcanvas {
+  background-color: rgba(1, 1, 1, 0.832);
+  width: 100% !important;
+  backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.offcanvas-header {
+  border-bottom: none;
+  padding-bottom: 1rem;
+}
+
+.offcanvas-body {
+  padding-top: 2rem;
+}
+
+.offcanvas .nav-link {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.offcanvas .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.offcanvas .nav-link.active-link {
+  background-color: var(--gold);
+  color: white !important;
+}
+
+.text-gold {
+  color: #ccb12b !important;
 }

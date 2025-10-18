@@ -11,7 +11,7 @@
                 <span class="logo-main">LEXIS</span> <span class="logo-sub">Partners Consulting</span>
               </p>
             </div>
-            <p class="mb-3">{% trans "Expertise en droit public pour sécuriser les projets et renforcer les partenariats public-privé." %}</p>
+            <p class="mb-3">{% blocktrans %}Nous sommes un cabinet de conseil juridique spécialisé dans le droit public et la régulation. Nous nous engageons à fournir des conseils juridiques de haute qualité pour nos clients, en mettant à disposition notre expertise juridique et nos ressources humaines.{% endblocktrans %}</p>
             <div class="d-flex gap-3 social-links">
               <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
                   class="bi bi-linkedin"></i></a>
@@ -28,44 +28,44 @@
             <ul class="list-unstyled footer-links">
               <li class="mb-2">
                 <a href="{% url 'index' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Home" %}</a>
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Accueil" %}</a>
               </li>
               <li class="mb-2">
                 <a href="{% url 'about' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Qui sommes-nous ?" %}</a>
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "A propos" %}</a>
               </li>
               <li class="mb-2">
                 <a href="{% url 'services' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Services" %}</a>
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Nos services" %}</a>
               </li>
               <li class="mb-2">
                 <a href="{% url 'contact' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Contact" %}</a>
+                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Contactez-nous" %}</a>
               </li>
             </ul>
           </div>
           <div class="col-md-4">
-            <h3 class="fs-4 mb-3" style="color:#C2A83E">{% trans "Contact" %}</h3>
+            <h3 class="fs-4 mb-3" style="color:#C2A83E">{% trans "Contactez-nous" %}</h3>
             <div class="mb-3 d-flex">
               <i class="bi bi-house me-3 mt-1" style="color:#C2A83E"></i>
               <p>
-                Kinshasa, <br /> {% trans "République Démocratique du Congo" %}
+                Kinshasa, <br /> {% blocktrans %}République Démocratique du Congo{% endblocktrans %}
               </p>
             </div>
             <div class="mb-3 d-flex">
               <i class="bi bi-telephone me-3 mt-1" style="color:#C2A83E"></i>
-              <a href="tel:+243813352409" class="text-decoration-none text-white" target="_blank">{% trans "Appelez-nous 24/7" %}
+              <a href="tel:+243813352409" class="text-decoration-none text-white" target="_blank">{% blocktrans %}Appelez-nous 24/7{% endblocktrans %}
                 <br /> <strong>+ 243 813 352 409</strong></a>
             </div>
             <div class="mb-3 d-flex">
               <i class="bi bi-envelope me-3 mt-1" style="color:#C2A83E"></i>
               <a href="mailto:contact@lexispartners.com" class="text-decoration-none text-white" target="_blank">
-                {% trans "Notre email" %} : <br /><strong>contact@lexispartnersconsulting.com</strong></a>
+                {% blocktrans %}Notre email{% endblocktrans %} : <br /><strong>contact@lexispartnersconsulting.com</strong></a>
             </div>
             <div class="mb-3 d-flex">
               <i class="bi bi-clock me-3 mt-1" style="color:#C2A83E"></i>
               <p>
-                {% trans "Notre horaire d'ouverture" %} <br /> <strong>{% trans "Du Lundi au Vendredi de 8H30 à 18H30" %}</strong>
+                {% blocktrans %}Notre horaire d'ouverture{% endblocktrans %} <br /> <strong>{% blocktrans %}Du Lundi au Vendredi de 8H30 à 18H30{% endblocktrans %}</strong>
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@
 
   <div class="text-center py-3" style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem;">
     <p class="mb-0 small">
-      &copy;{% now 'Y' %} Lexis partners consulting. <br>{% trans "Tous nos droits réservés." %}
+      &copy;{% now 'Y' %} Lexis partners consulting. <br>{% blocktrans %}Tous nos droits réservés.{% endblocktrans %}
     </p>
   </div>
 </footer>

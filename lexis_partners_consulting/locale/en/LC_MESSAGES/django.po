@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 06:30+0100\n"
+"POT-Creation-Date: 2025-10-18 06:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,54 +235,62 @@ msgid ""
 msgstr "A tailored legal strategy adapted to your needs"
 
 #: lexis_partners_consulting/templates/components/footer.html:14
+#, fuzzy
+#| msgid ""
+#| "Expertise en droit public pour sécuriser les projets et renforcer les "
+#| "partenariats"
 msgid ""
 "Expertise en droit public pour sécuriser les projets et renforcer les "
-"partenariats"
-msgstr "Public law expertise to secure projects and strengthen partnerships"
+"partenariats public-privé."
+msgstr "Public law expertise to secure projects and strengthen public-private partnerships"
 
-#: lexis_partners_consulting/templates/components/footer.html:32
+#: lexis_partners_consulting/templates/components/footer.html:31
 msgid "Home"
 msgstr "Home"
 
-#: lexis_partners_consulting/templates/components/footer.html:36
+#: lexis_partners_consulting/templates/components/footer.html:35
 msgid "Qui sommes-nous ?"
 msgstr "Who are we?"
 
-#: lexis_partners_consulting/templates/components/footer.html:40
+#: lexis_partners_consulting/templates/components/footer.html:39
 #, fuzzy
 #| msgid "Nos services"
 msgid "Services"
 msgstr "Our services"
 
-#: lexis_partners_consulting/templates/components/footer.html:44
-#: lexis_partners_consulting/templates/components/footer.html:49
+#: lexis_partners_consulting/templates/components/footer.html:43
+#: lexis_partners_consulting/templates/components/footer.html:48
 #, fuzzy
 #| msgid "Contactez-nous"
 msgid "Contact"
 msgstr "Contact us"
 
-#: lexis_partners_consulting/templates/components/footer.html:53
+#: lexis_partners_consulting/templates/components/footer.html:52
 msgid "République Démocratique du Congo"
 msgstr "Democratic Republic of Congo"
 
-#: lexis_partners_consulting/templates/components/footer.html:58
-msgid "Appelez nous 24/7"
+#: lexis_partners_consulting/templates/components/footer.html:57
+#, fuzzy
+#| msgid "Appelez nous 24/7"
+msgid "Appelez-nous 24/7"
 msgstr "Call us 24/7"
 
-#: lexis_partners_consulting/templates/components/footer.html:64
-msgid "Email"
-msgstr "Email"
+#: lexis_partners_consulting/templates/components/footer.html:63
+msgid "Notre email"
+msgstr "Our email"
 
-#: lexis_partners_consulting/templates/components/footer.html:69
-msgid "Ouvert"
-msgstr "Open"
+#: lexis_partners_consulting/templates/components/footer.html:68
+msgid "Notre horaire d'ouverture"
+msgstr "Our opening hours"
 
-#: lexis_partners_consulting/templates/components/footer.html:69
+#: lexis_partners_consulting/templates/components/footer.html:68
 msgid "Du Lundi au Vendredi de 8H30 à 18H30"
 msgstr "Monday to Friday from 8:30 AM to 6:30 PM"
 
-#: lexis_partners_consulting/templates/components/footer.html:80
-msgid "Tous droits réservés."
+#: lexis_partners_consulting/templates/components/footer.html:79
+#, fuzzy
+#| msgid "Tous droits réservés."
+msgid "Tous nos droits réservés."
 msgstr "All rights reserved."
 
 #: lexis_partners_consulting/templates/components/navbar.html:20

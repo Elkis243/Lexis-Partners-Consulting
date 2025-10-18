@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 07:01+0100\n"
+"POT-Creation-Date: 2025-10-18 07:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: lexis_partners_consulting/templates/app/about.html:11
+msgid "Cabinet d’excellence en droit public et régulation"
+msgstr "Excellence law firm in public law and regulation"
+
+#: lexis_partners_consulting/templates/app/about.html:12
 #: lexis_partners_consulting/templates/app/index.html:12
 msgid ""
 "Notre cabinet accompagne institutions et entreprises en droit public et "
@@ -25,11 +29,100 @@ msgid ""
 msgstr ""
 "Our firm supports institutions and businesses in public law and regulations."
 
+#: lexis_partners_consulting/templates/app/about.html:25
+msgid "A propos de nous"
+msgstr "About us"
+
+#: lexis_partners_consulting/templates/app/about.html:26
+msgid ""
+"Lexis Partners Consulting est un cabinet spécialisé en droit public et "
+"régulation, basé en RDC et reconnu pour son expertise en Afrique. Notre "
+"équipe pluridisciplinaire réunit des compétences juridiques avancées et une "
+"compréhension approfondie des enjeux politiques et économiques actuels. Nous "
+"accompagnons gouvernements, institutions publiques et investisseurs privés "
+"dans la création et la mise en œuvre de cadres juridiques performants."
+msgstr ""
+"Lexis Partners Consulting is a law firm specialized in public law and "
+"regulation, based in DRC and recognized for its expertise in Africa. Our "
+"multidisciplinary team combines advanced legal skills with a deep "
+"understanding of current political and economic issues. We support "
+"governments, public institutions and private investors in creating and "
+"implementing effective legal frameworks."
+
+#: lexis_partners_consulting/templates/app/about.html:27
+msgid ""
+"Le cabinet offre une expertise pointue dans des domaines clés tels que :"
+msgstr "The firm offers sharp expertise in key areas such as:"
+
+#: lexis_partners_consulting/templates/app/about.html:29
+msgid "Les marchés publics et les partenariats public-privé"
+msgstr "Public procurement and public-private partnerships"
+
+#: lexis_partners_consulting/templates/app/about.html:30
+msgid "Le droit des investissements et des grands projets publics"
+msgstr "Investment law and major public projects"
+
+#: lexis_partners_consulting/templates/app/about.html:31
+msgid "La gouvernance publique, les réformes administratives et la régulation"
+msgstr "Public governance, administrative reforms and regulation"
+
+#: lexis_partners_consulting/templates/app/about.html:32
+msgid "Les finances publiques et la fiscalité"
+msgstr "Public finances and taxation"
+
+#: lexis_partners_consulting/templates/app/about.html:33
+msgid ""
+"Les relations entre le gouvernement, le parlement et les acteurs économiques"
+msgstr "Relations between government, parliament and economic actors"
+
+#: lexis_partners_consulting/templates/app/about.html:50
+msgid "Notre mission"
+msgstr "Our mission"
+
+#: lexis_partners_consulting/templates/app/about.html:51
+msgid ""
+"Offrir des solutions juridiques et stratégiques innovantes pour\n"
+"                faciliter les interactions entre l'État et le secteur privé, "
+"en garantissant transparence, efficacité et\n"
+"                conformité dans les opérations et réformes publiques"
+msgstr ""
+"To provide innovative legal and strategic solutions to facilitate "
+"interactions between the State and the private sector, ensuring "
+"transparency, efficiency and compliance in public operations and reforms"
+
+#: lexis_partners_consulting/templates/app/about.html:61
+msgid "Notre vision"
+msgstr "Our vision"
+
+#: lexis_partners_consulting/templates/app/about.html:62
+msgid ""
+"Devenir le partenaire incontournable en matière de conseil en droit\n"
+"                public et de facilitation des affaires pour les "
+"gouvernements et les investisseurs, tout en renforçant\n"
+"                la gouvernance et la compétitivité économique en Afrique et "
+"au-delà."
+msgstr ""
+"To become the essential partner for public law consulting and business "
+"facilitation for governments and investors, while strengthening governance "
+"and economic competitiveness in Africa and beyond."
+
+#: lexis_partners_consulting/templates/app/about.html:77
+msgid "Prêt à transformer vos enjeux <br /> juridiques en opportunités ?"
+msgstr "Ready to transform your legal challenges <br /> into opportunities?"
+
+#: lexis_partners_consulting/templates/app/about.html:79
+msgid "Contactez-nous pour une consultation stratégique avec nos experts."
+msgstr "Contact us for a strategic consultation with our experts."
+
+#: lexis_partners_consulting/templates/app/about.html:80
+msgid "Prendre rendez-vous"
+msgstr "Schedule an appointment"
+
 #: lexis_partners_consulting/templates/app/index.html:14
 #: lexis_partners_consulting/templates/components/footer.html:47
 #: lexis_partners_consulting/templates/components/footer.html:52
 #: lexis_partners_consulting/templates/components/navbar.html:35
-#: lexis_partners_consulting/templates/components/navbar.html:110
+#: lexis_partners_consulting/templates/components/navbar.html:116
 msgid "Contactez-nous"
 msgstr "Contact us"
 
@@ -248,24 +341,28 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"Our firm supports institutions, businesses, and public actors in resolving their legal challenges, offering specialized and strategic advice in public law, regulation, and governance. We make our multidisciplinary expertise available to meet your specific needs and support your long-term development.\n"
+"Our firm supports institutions, businesses, and public actors in resolving "
+"their legal challenges, offering specialized and strategic advice in public "
+"law, regulation, and governance. We make our multidisciplinary expertise "
+"available to meet your specific needs and support your long-term "
+"development.\n"
 "                "
 
 #: lexis_partners_consulting/templates/components/footer.html:35
 #: lexis_partners_consulting/templates/components/navbar.html:20
-#: lexis_partners_consulting/templates/components/navbar.html:95
+#: lexis_partners_consulting/templates/components/navbar.html:101
 msgid "Accueil"
 msgstr "Home"
 
 #: lexis_partners_consulting/templates/components/footer.html:39
 #: lexis_partners_consulting/templates/components/navbar.html:25
-#: lexis_partners_consulting/templates/components/navbar.html:100
+#: lexis_partners_consulting/templates/components/navbar.html:106
 msgid "A propos"
 msgstr "About"
 
 #: lexis_partners_consulting/templates/components/footer.html:43
 #: lexis_partners_consulting/templates/components/navbar.html:30
-#: lexis_partners_consulting/templates/components/navbar.html:105
+#: lexis_partners_consulting/templates/components/navbar.html:111
 msgid "Nos services"
 msgstr "Our services"
 

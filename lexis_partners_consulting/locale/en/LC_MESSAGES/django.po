@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 06:23+0100\n"
+"POT-Creation-Date: 2025-10-18 06:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,6 +233,57 @@ msgid ""
 "Une stratégie juridique sur mesure\n"
 "            adaptée à vos besoins"
 msgstr "A tailored legal strategy adapted to your needs"
+
+#: lexis_partners_consulting/templates/components/footer.html:14
+msgid ""
+"Expertise en droit public pour sécuriser les projets et renforcer les "
+"partenariats"
+msgstr "Public law expertise to secure projects and strengthen partnerships"
+
+#: lexis_partners_consulting/templates/components/footer.html:32
+msgid "Home"
+msgstr "Home"
+
+#: lexis_partners_consulting/templates/components/footer.html:36
+msgid "Qui sommes-nous ?"
+msgstr "Who are we?"
+
+#: lexis_partners_consulting/templates/components/footer.html:40
+#, fuzzy
+#| msgid "Nos services"
+msgid "Services"
+msgstr "Our services"
+
+#: lexis_partners_consulting/templates/components/footer.html:44
+#: lexis_partners_consulting/templates/components/footer.html:49
+#, fuzzy
+#| msgid "Contactez-nous"
+msgid "Contact"
+msgstr "Contact us"
+
+#: lexis_partners_consulting/templates/components/footer.html:53
+msgid "République Démocratique du Congo"
+msgstr "Democratic Republic of Congo"
+
+#: lexis_partners_consulting/templates/components/footer.html:58
+msgid "Appelez nous 24/7"
+msgstr "Call us 24/7"
+
+#: lexis_partners_consulting/templates/components/footer.html:64
+msgid "Email"
+msgstr "Email"
+
+#: lexis_partners_consulting/templates/components/footer.html:69
+msgid "Ouvert"
+msgstr "Open"
+
+#: lexis_partners_consulting/templates/components/footer.html:69
+msgid "Du Lundi au Vendredi de 8H30 à 18H30"
+msgstr "Monday to Friday from 8:30 AM to 6:30 PM"
+
+#: lexis_partners_consulting/templates/components/footer.html:80
+msgid "Tous droits réservés."
+msgstr "All rights reserved."
 
 #: lexis_partners_consulting/templates/components/navbar.html:20
 #: lexis_partners_consulting/templates/components/navbar.html:95

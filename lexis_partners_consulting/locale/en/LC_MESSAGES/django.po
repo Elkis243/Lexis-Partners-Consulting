@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 07:46+0100\n"
+"POT-Creation-Date: 2025-10-18 08:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,6 +118,7 @@ msgstr "Contact us for a strategic consultation with our experts."
 msgid "Prendre rendez-vous"
 msgstr "Schedule an appointment"
 
+#: lexis_partners_consulting/templates/app/contact.html:7
 #: lexis_partners_consulting/templates/app/index.html:14
 #: lexis_partners_consulting/templates/components/footer.html:47
 #: lexis_partners_consulting/templates/components/footer.html:52
@@ -125,6 +126,62 @@ msgstr "Schedule an appointment"
 #: lexis_partners_consulting/templates/components/navbar.html:116
 msgid "Contactez-nous"
 msgstr "Contact us"
+
+#: lexis_partners_consulting/templates/app/contact.html:10
+msgid "Contactez notre équipe pour vos besoins juridiques et institutionnels."
+msgstr "Contact our team for your legal and institutional needs."
+
+#: lexis_partners_consulting/templates/app/contact.html:31
+msgid "Nom complet"
+msgstr "Full name"
+
+#: lexis_partners_consulting/templates/app/contact.html:39
+msgid "Votre email"
+msgstr "Your email"
+
+#: lexis_partners_consulting/templates/app/contact.html:40
+msgid "Votre adresse e-mail"
+msgstr "Your email address"
+
+#: lexis_partners_consulting/templates/app/contact.html:48
+msgid "Téléphone"
+msgstr "Phone"
+
+#: lexis_partners_consulting/templates/app/contact.html:50
+msgid "Exemple: 243 81 335 2409"
+msgstr "Example: 243 81 335 2409"
+
+#: lexis_partners_consulting/templates/app/contact.html:56
+msgid "Sélectionnez un sujet"
+msgstr "Select a subject"
+
+#: lexis_partners_consulting/templates/app/contact.html:58
+msgid "Consultation en droit public"
+msgstr "Public law consultation"
+
+#: lexis_partners_consulting/templates/app/contact.html:59
+msgid "Marchés publics et PPP"
+msgstr "Public procurement and PPP"
+
+#: lexis_partners_consulting/templates/app/contact.html:60
+msgid "Investissements et grands projets"
+msgstr "Investments and major projects"
+
+#: lexis_partners_consulting/templates/app/contact.html:61
+msgid "Autre demande"
+msgstr "Other request"
+
+#: lexis_partners_consulting/templates/app/contact.html:67
+msgid "Message"
+msgstr "Message"
+
+#: lexis_partners_consulting/templates/app/contact.html:68
+msgid "Votre message"
+msgstr "Your message"
+
+#: lexis_partners_consulting/templates/app/contact.html:74
+msgid "Envoyer le message"
+msgstr "Send message"
 
 #: lexis_partners_consulting/templates/app/index.html:27
 msgid "Découvrez notre cabinet"
@@ -183,6 +240,7 @@ msgstr ""
 "award to litigation management."
 
 #: lexis_partners_consulting/templates/app/index.html:68
+#: lexis_partners_consulting/templates/app/services.html:42
 msgid "Droit des Investissements et Grands Projets Publics"
 msgstr "Investment Law and Major Public Projects"
 
@@ -196,6 +254,7 @@ msgstr ""
 "negotiations with authorities and donors."
 
 #: lexis_partners_consulting/templates/app/index.html:78
+#: lexis_partners_consulting/templates/app/services.html:52
 msgid "Droit de la Gouvernance Publique et Réformes Administratives"
 msgstr "Public Governance Law and Administrative Reforms"
 
@@ -329,6 +388,227 @@ msgid ""
 "            adaptée à vos besoins"
 msgstr "A tailored legal strategy adapted to your needs"
 
+#: lexis_partners_consulting/templates/app/services.html:12
+msgid "Nos domaines d'expertise"
+msgstr "Our areas of expertise"
+
+#: lexis_partners_consulting/templates/app/services.html:14
+msgid ""
+"Nous offrons des solutions\n"
+"          juridiques et stratégiques pour vos projets et partenariats "
+"institutionnels."
+msgstr ""
+"We offer legal and strategic solutions for your institutional projects and "
+"partnerships."
+
+#: lexis_partners_consulting/templates/app/services.html:31
+msgid "Droit des Marchés Publics et Partenariats Public-Privé (PPP)"
+msgstr "Public Procurement Law and Public-Private Partnerships"
+
+#: lexis_partners_consulting/templates/app/services.html:33
+msgid ""
+"Nous accompagnons les entreprises et institutions dans les marchés\n"
+"                publics, de la passation à la gestion des contentieux."
+msgstr ""
+"We support companies and institutions in public procurement, from contract "
+"award to litigation management."
+
+#: lexis_partners_consulting/templates/app/services.html:43
+msgid ""
+"Nous accompagnons les investisseurs dans le montage juridique de\n"
+"                projets d'infrastructure et les négociations avec les "
+"autorités et bailleurs."
+msgstr ""
+"We support investors in the legal structuring of infrastructure projects and "
+"negotiations with authorities and donors."
+
+#: lexis_partners_consulting/templates/app/services.html:54
+msgid ""
+"Nous accompagnons les gouvernements dans la modernisation\n"
+"                administrative, la conformité aux normes internationales et "
+"la rédaction de textes législatifs."
+msgstr ""
+"We support governments in administrative modernization, compliance with "
+"international standards, and the drafting of legislative texts."
+
+#: lexis_partners_consulting/templates/app/services.html:63
+msgid "Droit de la Régulation et des Services Publics"
+msgstr "Regulation Law and Public Services"
+
+#: lexis_partners_consulting/templates/app/services.html:64
+msgid ""
+"Nous accompagnons les agences de régulation et les entreprises privées\n"
+"                dans les secteurs stratégiques, en offrant des conseils "
+"juridiques, en structurant des cadres\n"
+"                réglementaires et en défendant les intérêts face aux "
+"autorités."
+msgstr ""
+"We support regulatory agencies and private companies in strategic sectors, "
+"offering legal advice, structuring regulatory frameworks, and defending "
+"interests before authorities."
+
+#: lexis_partners_consulting/templates/app/services.html:74
+msgid "Droit des Finances Publiques et Fiscalité des Affaires"
+msgstr "Public Finance Law and Business Taxation"
+
+#: lexis_partners_consulting/templates/app/services.html:75
+msgid ""
+"Nous assistons les États dans la gestion budgétaire et la transparence\n"
+"                fiscale, tout en accompagnant les entreprises privées dans "
+"l'optimisation fiscale, la conformité et les\n"
+"                négociations avec les autorités financières."
+msgstr ""
+"We assist states in budget management and fiscal transparency, while "
+"supporting private companies in tax optimization, compliance, and "
+"negotiations with financial authorities."
+
+#: lexis_partners_consulting/templates/app/services.html:85
+msgid "Droit des Relations Gouvernementales et Lobbying"
+msgstr "Government Relations and Lobbying Law"
+
+#: lexis_partners_consulting/templates/app/services.html:86
+msgid ""
+"Nous accompagnons les acteurs privés dans leurs démarches de lobbying\n"
+"                juridique, conseillons les gouvernements dans l'élaboration "
+"de politiques économiques, et mettons en\n"
+"                place des stratégies d'influence auprès des décideurs "
+"publics."
+msgstr ""
+"We support private actors in their legal lobbying efforts, advise "
+"governments on economic policy development, and implement influence "
+"strategies with public decision-makers."
+
+#: lexis_partners_consulting/templates/app/services.html:96
+msgid "Droit de la Décentralisation et des Collectivités Territoriales"
+msgstr "Decentralization Law and Local Authorities"
+
+#: lexis_partners_consulting/templates/app/services.html:98
+msgid ""
+"Nous accompagnons juridiquement les entreprises dans leurs relations\n"
+"                avec les autorités locales, conseillons les municipalités "
+"sur la gestion des investissements, et\n"
+"                structurons des projets de développement en partenariat avec "
+"le secteur privé."
+msgstr ""
+"We legally support companies in their relations with local authorities, "
+"advise municipalities on investment management, and structure development "
+"projects in partnership with the private sector."
+
+#: lexis_partners_consulting/templates/app/services.html:108
+msgid "Droit du Secteur Extractif et des Ressources Naturelles"
+msgstr "Extractive Sector Law and Natural Resources"
+
+#: lexis_partners_consulting/templates/app/services.html:109
+msgid ""
+"Nous assistons nos clients dans la négociation de contrats miniers,\n"
+"                pétroliers et gaziers, veillons à la conformité "
+"réglementaire avec les standards nationaux et\n"
+"                internationaux, et gérons les conflits entre l'État, les "
+"entreprises et les communautés locales."
+msgstr ""
+"We assist our clients in negotiating mining, oil and gas contracts, ensure "
+"regulatory compliance with national and international standards, and manage "
+"conflicts between the state, companies, and local communities."
+
+#: lexis_partners_consulting/templates/app/services.html:119
+msgid "Droit de l'Innovation, du Numérique et des Nouvelles Technologies"
+msgstr "Innovation, Digital and New Technologies Law"
+
+#: lexis_partners_consulting/templates/app/services.html:120
+msgid ""
+"Nous conseillons les gouvernements sur les lois propices à\n"
+"                l'innovation, accompagnons les entreprises technologiques "
+"dans leurs démarches réglementaires, et\n"
+"                protégeons les investissements dans le numérique et "
+"l'intelligence artificielle."
+msgstr ""
+"We advise governments on innovation-friendly laws, support technology "
+"companies in their regulatory processes, and protect investments in digital "
+"and artificial intelligence."
+
+#: lexis_partners_consulting/templates/app/services.html:135
+msgid "Services"
+msgstr "Services"
+
+#: lexis_partners_consulting/templates/app/services.html:135
+msgid "complémentaires"
+msgstr "complementary"
+
+#: lexis_partners_consulting/templates/app/services.html:137
+msgid ""
+"Notre expertise va au-delà des services juridiques traditionnels, en offrant "
+"des\n"
+"          solutions complémentaires et stratégiques pour soutenir vos "
+"projets. Nous mettons à votre disposition des\n"
+"          conseils sur-mesure, alliant rigueur juridique et compréhension "
+"des enjeux économiques et sociaux, afin de\n"
+"          maximiser l'impact de vos initiatives."
+msgstr ""
+"Our expertise goes beyond traditional legal services, offering complementary "
+"and strategic solutions to support your projects. We provide tailor-made "
+"advice, combining legal rigor and understanding of economic and social "
+"issues, to maximize the impact of your initiatives."
+
+#: lexis_partners_consulting/templates/app/services.html:143
+msgid ""
+"Protection de la propriété intellectuelle (brevets, marques, droits d'auteur)"
+msgstr "Intellectual property protection (patents, trademarks, copyrights)"
+
+#: lexis_partners_consulting/templates/app/services.html:146
+msgid "Rédaction et négociation de contrats commerciaux et licences"
+msgstr "Drafting and negotiation of commercial contracts and licenses"
+
+#: lexis_partners_consulting/templates/app/services.html:149
+msgid "Conformité RGPD/CCPA pour la protection des données"
+msgstr "GDPR/CCPA compliance for data protection"
+
+#: lexis_partners_consulting/templates/app/services.html:152
+msgid "Optimisation fiscale et stratégie d'évasion légale"
+msgstr "Tax optimization and legal avoidance strategy"
+
+#: lexis_partners_consulting/templates/app/services.html:155
+msgid "Compliance en droit du travail et commercial"
+msgstr "Labor and commercial law compliance"
+
+#: lexis_partners_consulting/templates/app/services.html:158
+msgid "Conseil en régulation des plateformes numériques"
+msgstr "Digital platform regulation consulting"
+
+#: lexis_partners_consulting/templates/app/services.html:161
+msgid "Accompagnement en matière de licenciement et engagements"
+msgstr "Support in dismissal and employment matters"
+
+#: lexis_partners_consulting/templates/app/services.html:164
+msgid ""
+"Conseil en environnement et négociation de contrats d'exploitation minière/"
+"pétrolière"
+msgstr ""
+"Environmental consulting and mining/oil exploitation contract negotiation"
+
+#: lexis_partners_consulting/templates/app/services.html:167
+msgid "Assistance dans le financement de projets énergétiques"
+msgstr "Assistance in energy project financing"
+
+#: lexis_partners_consulting/templates/app/services.html:170
+msgid ""
+"Gestion des contentieux (litiges, appels d'offres, diffamation, droits "
+"d'image)"
+msgstr "Litigation management (disputes, tenders, defamation, image rights)"
+
+#: lexis_partners_consulting/templates/app/services.html:173
+msgid "Rédaction de pactes d'actionnaires et accords de confidentialité"
+msgstr "Drafting of shareholder agreements and confidentiality agreements"
+
+#: lexis_partners_consulting/templates/app/services.html:176
+msgid ""
+"Conseil en mise sur le marché de nouveaux médicaments (conformité FDA, EMA, "
+"OMS)"
+msgstr "Consulting on new drug market entry (FDA, EMA, WHO compliance)"
+
+#: lexis_partners_consulting/templates/app/services.html:179
+msgid "Négociation de contrats sportifs (clubs, joueurs, sponsors)"
+msgstr "Sports contract negotiation (clubs, players, sponsors)"
+
 #: lexis_partners_consulting/templates/components/footer.html:14
 msgid ""
 "\n"
@@ -382,10 +662,4 @@ msgstr "Our email"
 msgid "Notre horaire d'ouverture"
 msgstr "Our opening hours"
 
-#: lexis_partners_consulting/templates/components/footer.html:72
-msgid "Du Lundi au Vendredi de 8H30 à 18H30"
-msgstr "Monday to Friday from 8:30 AM to 6:30 PM"
-
-#: lexis_partners_consulting/templates/components/footer.html:83
-msgid "Tous nos droits réservés."
-msgstr "All rights reserved."
+#: lexis_partners_consulting/templates/components/footer.html:72complete la traduction en anglais partout ou il en manque aussi nettoye le fichier pour enelever le fuzzyy | et les erreurs

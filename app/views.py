@@ -4,21 +4,15 @@ from django.shortcuts import redirect
 from django.core.mail import send_mail
 from django.conf import settings
 
-# Create your views here.
-
 
 def index(request):
     page = "Accueil"
-    return render(request, 'app/index.html', {
-        'page': page
-    })
+    return render(request, "app/index.html", {"page": page})
 
 
 def about(request):
     page = "Qui sommes-nous ?"
-    return render(request, 'app/about.html', {
-        'page': page
-    })
+    return render(request, "app/about.html", {"page": page})
 
 
 def contact(request):
@@ -30,7 +24,6 @@ def contact(request):
         phone = request.POST.get("phone")
         subject = request.POST.get("subject")
         message = request.POST.get("message")
-       
 
         try:
             email_subject = f"Nouveau contact : {subject}"
@@ -61,13 +54,9 @@ def contact(request):
             messages.error(request, f"Erreur lors de l'envoi: {str(e)}")
             return redirect(request.path)
 
-    return render(request, 'app/contact.html', {
-        'page': page
-    })
+    return render(request, "app/contact.html", {"page": page})
 
 
 def services(request):
     page = "Nos services"
-    return render(request, 'app/services.html', {
-        'page': page
-    })
+    return render(request, "app/services.html", {"page": page})

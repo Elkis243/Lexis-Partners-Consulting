@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 08:04+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2025-10-29 10:46+0100\n"
+"PO-Revision-Date: 2025-10-29 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: English\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -647,19 +647,36 @@ msgid "Nos services"
 msgstr "Our services"
 
 #: lexis_partners_consulting/templates/components/footer.html:56
-msgid "République Démocratique du Congo"
-msgstr "Democratic Republic of Congo"
+msgid ""
+"\n"
+"                22. Avenue Palais du peuple. Quartier la voix du peuple. "
+"Commune de Lingwala. Kinshasa.\n"
+"                "
+msgstr ""
+"\n"
+"                22. Palais du Peuple Avenue. La Voix du Peuple neighborhood. "
+"Lingwala Commune. Kinshasa.\n"
+"                "
 
-#: lexis_partners_consulting/templates/components/footer.html:61
+#: lexis_partners_consulting/templates/components/footer.html:63
 msgid "Appelez-nous 24/7"
 msgstr "Call us 24/7"
 
-#: lexis_partners_consulting/templates/components/footer.html:67
+#: lexis_partners_consulting/templates/components/footer.html:69
 msgid "Notre email"
 msgstr "Our email"
 
-#: lexis_partners_consulting/templates/components/footer.html:72
+#: lexis_partners_consulting/templates/components/footer.html:74
 msgid "Notre horaire d'ouverture"
 msgstr "Our opening hours"
 
-#: lexis_partners_consulting/templates/components/footer.html:72complete la traduction en anglais partout ou il en manque aussi nettoye le fichier pour enelever le fuzzyy | et les erreurs
+#: lexis_partners_consulting/templates/components/footer.html:74
+msgid "Du Lundi au Vendredi de 8H30 à 18H30"
+msgstr "Monday to Friday from 8:30 AM to 6:30 PM"
+
+#: lexis_partners_consulting/templates/components/footer.html:85
+msgid "Tous nos droits réservés."
+msgstr "All rights reserved."
+
+#~ msgid "République Démocratique du Congo"
+#~ msgstr "Democratic Republic of Congo"

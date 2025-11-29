@@ -1,9 +1,4 @@
-{% extends 'base.html' %}
-{% load static %}
-{% load i18n %}
-
-{% block base %}
-{% include 'components/navbar.html' %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block base %} {% include 'components/navbar.html' %}
 <header class="other-hero">
   <div class="container d-flex align-items-center h-100">
     <div class="row justify-content-center">
@@ -19,11 +14,20 @@
     <div class="col-md-10">
       <div class="row justify-content-center align-items-center gy-3">
         <div class="col-12 col-md-6">
-          <img src="{% static 'images/avocate.webp' %}" alt="Directeur générale" class="img-fluid" />
+          <div style="position: relative; display: inline-block; width: 100%">
+            <img src="{% static 'images/ceo.webp' %}" alt="Directeur générale" class="img-fluid" />
+            <div style="position: absolute; top: 0; right: 0; background-color: #012b39; color: white; padding: 15px 20px; font-size: 12px; font-weight: 500; white-space: nowrap">
+              <p class="mb-0" style="margin: 0">Moise Kisudiku, CEO</p>
+            </div>
+          </div>
         </div>
         <div class="col-12 col-md-6">
           <p class="mb-3 fs-2 text-custom-color fw-medium">{% blocktrans %}A propos de nous{% endblocktrans %}</p>
-          <p class="fs-6">{% blocktrans %}Lexis Partners Consulting est un cabinet spécialisé en droit public et régulation, basé en RDC et reconnu pour son expertise en Afrique. Notre équipe pluridisciplinaire réunit des compétences juridiques avancées et une compréhension approfondie des enjeux politiques et économiques actuels. Nous accompagnons gouvernements, institutions publiques et investisseurs privés dans la création et la mise en œuvre de cadres juridiques performants.{% endblocktrans %}</p>
+          <p class="fs-6">
+            {% blocktrans %}Lexis Partners Consulting est un cabinet spécialisé en droit public et régulation, basé en RDC et reconnu pour son expertise en Afrique. Notre équipe pluridisciplinaire
+            réunit des compétences juridiques avancées et une compréhension approfondie des enjeux politiques et économiques actuels. Nous accompagnons gouvernements, institutions publiques et
+            investisseurs privés dans la création et la mise en œuvre de cadres juridiques performants.{% endblocktrans %}
+          </p>
           <p class="fs-6">{% blocktrans %}Le cabinet offre une expertise pointue dans des domaines clés tels que :{% endblocktrans %}</p>
           <ul>
             <li>{% blocktrans %}Les marchés publics et les partenariats public-privé{% endblocktrans %}</li>
@@ -45,23 +49,25 @@
           <div class="col-md-6 d-flex">
             <div class="container p-5 bg-white rounded-3 h-100 d-flex flex-column py-4">
               <div class="d-flex justify-content-center">
-                <i class="fas fa-bullseye fs-2" style="color:#C2A83E"></i>
+                <i class="fas fa-bullseye fs-2" style="color: #c2a83e"></i>
               </div>
               <p class="mb-3 fs-4 text-center text-custom-color fw-medium">{% blocktrans %}Notre mission{% endblocktrans %}</p>
-              <p class="text-center flex-grow-1 p">{% blocktrans %}Offrir des solutions juridiques et stratégiques innovantes pour
-                faciliter les interactions entre l'État et le secteur privé, en garantissant transparence, efficacité et
-                conformité dans les opérations et réformes publiques{% endblocktrans %}</p>
+              <p class="text-center flex-grow-1 p">
+                {% blocktrans %}Offrir des solutions juridiques et stratégiques innovantes pour faciliter les interactions entre l'État et le secteur privé, en garantissant transparence, efficacité et
+                conformité dans les opérations et réformes publiques{% endblocktrans %}
+              </p>
             </div>
           </div>
           <div class="col-md-6 d-flex">
             <div class="container p-5 bg-white rounded-3 h-100 d-flex flex-column py-4">
               <div class="d-flex justify-content-center">
-                <i class="fas fa-eye fs-2" style="color:#C2A83E"></i>
+                <i class="fas fa-eye fs-2" style="color: #c2a83e"></i>
               </div>
               <p class="mb-3 fs-4 text-center text-custom-color fw-medium">{% blocktrans %}Notre vision{% endblocktrans %}</p>
-              <p class="text-center flex-grow-0">{% blocktrans %}Devenir le partenaire incontournable en matière de conseil en droit
-                public et de facilitation des affaires pour les gouvernements et les investisseurs, tout en renforçant
-                la gouvernance et la compétitivité économique en Afrique et au-delà.{% endblocktrans %}</p>
+              <p class="text-center flex-grow-0">
+                {% blocktrans %}Devenir le partenaire incontournable en matière de conseil en droit public et de facilitation des affaires pour les gouvernements et les investisseurs, tout en
+                renforçant la gouvernance et la compétitivité économique en Afrique et au-delà.{% endblocktrans %}
+              </p>
             </div>
           </div>
         </div>
@@ -69,19 +75,19 @@
     </div>
   </div>
 </div>
-<div class="p-5 text-white" style="background-color: #012b39;">
+<div class="p-5 text-white" style="background-color: #012b39">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 text-center">
         <p class="fs-4">
-          {% blocktrans %}Prêt à transformer vos enjeux <br /> juridiques en opportunités ?{% endblocktrans %}
+          {% blocktrans %}Prêt à transformer vos enjeux <br />
+          juridiques en opportunités ?{% endblocktrans %}
         </p>
-          <p>{% blocktrans %}Contactez-nous pour une consultation stratégique avec nos experts.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Contactez-nous pour une consultation stratégique avec nos experts.{% endblocktrans %}</p>
         <a href="{% url 'contact' %}" class="btn custom-btn">{% blocktrans %}Prendre rendez-vous{% endblocktrans %}</a>
       </div>
     </div>
   </div>
 </div>
 
-{% include 'components/footer.html' %}
-{% endblock %}
+{% include 'components/footer.html' %} {% endblock %}

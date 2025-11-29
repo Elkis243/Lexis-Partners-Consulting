@@ -22,17 +22,22 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from app.sitemap import StaticViewSitemap
+from app.views import robots_txt
 
 # Configuration du sitemap
 sitemaps = {
-    'static': StaticViewSitemap,
+    "static": StaticViewSitemap,
 }
 
 urlpatterns = [
+    path("i18n/", include("django.conf.urls.i18n")),
     path(
-        "i18n/", include("django.conf.urls.i18n")
+        "sitemap.xml",
+        sitemap,
+        {"sitemaps": sitemaps},
+        name="django.contrib.sitemaps.views.sitemap",
     ),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path("robots.txt", robots_txt, name="robots_txt"),
 ]
 
 urlpatterns += i18n_patterns(

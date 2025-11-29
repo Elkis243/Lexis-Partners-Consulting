@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.shortcuts import redirect
 from django.core.mail import send_mail
 from django.conf import settings
+from django.http import HttpResponse
 
 
 def index(request):
@@ -60,3 +61,16 @@ def contact(request):
 def services(request):
     page = "Nos services"
     return render(request, "app/services.html", {"page": page})
+
+
+def robots_txt(request):
+    """
+    Vue pour servir le fichier robots.txt
+    """
+    lines = [
+        "User-agent: *",
+        "Allow: /",
+        "",
+        f"Sitemap: {request.build_absolute_uri('/sitemap.xml')}",
+    ]
+    return HttpResponse("\n".join(lines), content_type="text/plain")

@@ -1,77 +1,81 @@
-{% load static %}
-{% load i18n %}
-<footer class="p-5 text-white" style="background-color:#0e0f10">
+{% load static %} {% load i18n %}
+<footer class="p-5 text-white" style="background-color: #0e0f10">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12">
         <div class="row justify-content-center gy-4">
           <div class="col-md-3 mx-5">
             <div class="logo-text">
-              <p class="mb-4">
-                <span class="logo-main">LEXIS</span> <span class="logo-sub">Partners Consulting</span>
-              </p>
+              <p class="mb-4"><span class="logo-main">LEXIS</span> <span class="logo-sub">Partners Consulting</span></p>
               <p class="mb-3">
-                {% blocktrans %}
-                Notre cabinet accompagne les institutions, entreprises et acteurs publics dans la résolution de leurs enjeux juridiques, en offrant des conseils spécialisés et stratégiques en droit public, régulation ainsi qu'en gouvernance. Nous mettons à votre disposition notre expertise pluridisciplinaire pour répondre à vos besoins spécifiques et accompagner durablement votre développement.
-                {% endblocktrans %}
+                {% blocktrans %} Notre cabinet accompagne les institutions, entreprises et acteurs publics dans la résolution de leurs enjeux juridiques, en offrant des conseils spécialisés et
+                stratégiques en droit public, régulation ainsi qu'en gouvernance. Nous mettons à votre disposition notre expertise pluridisciplinaire pour répondre à vos besoins spécifiques et
+                accompagner durablement votre développement. {% endblocktrans %}
               </p>
             </div>
             <div class="d-flex gap-3 social-links">
-              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
-                  class="bi bi-linkedin"></i></a>
-              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
-                  class="bi bi-twitter-x"></i></a>
-              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
-                  class="bi bi-facebook"></i></a>
-              <a href="#" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i
-                  class="bi bi-tiktok"></i></a>
+              <a
+                href="https://www.linkedin.com/in/lexis-partners-consulting-4b18b5359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                class="text-decoration-none text-white d-flex justify-content-center align-items-center"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://x.com/lexispartners?s=21" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/share/1D5Jabbr3y/?mibextid=wwXIfr" class="text-decoration-none text-white d-flex justify-content-center align-items-center"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://www.tiktok.com/@lexispartners.consulting?_r=1&_t=ZM-91nycAn7OBM" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i class="bi bi-tiktok"></i></a>
+              <a href="https://www.instagram.com/lexispartnersconsulting?igsh=cmdnNWNuYmdwMDA1&utm_source=qr" class="text-decoration-none text-white d-flex justify-content-center align-items-center"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
           <div class="col-md-4">
-            <h3 class="fs-4 mb-3" style="color:#C2A83E">Navigation</h3>
+            <h3 class="fs-4 mb-3" style="color: #c2a83e">Navigation</h3>
             <ul class="list-unstyled footer-links">
               <li class="mb-2">
-                <a href="{% url 'index' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Accueil" %}</a>
+                <a href="{% url 'index' %}" class="text-white text-decoration-none d-flex align-items-center"
+                  ><i class="bi bi-chevron-right me-2" style="color: #c2a83e; font-size: 0.8rem"></i> {% trans "Accueil" %}</a
+                >
               </li>
               <li class="mb-2">
-                <a href="{% url 'about' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "A propos" %}</a>
+                <a href="{% url 'about' %}" class="text-white text-decoration-none d-flex align-items-center"
+                  ><i class="bi bi-chevron-right me-2" style="color: #c2a83e; font-size: 0.8rem"></i> {% trans "A propos" %}</a
+                >
               </li>
               <li class="mb-2">
-                <a href="{% url 'services' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Nos services" %}</a>
+                <a href="{% url 'services' %}" class="text-white text-decoration-none d-flex align-items-center"
+                  ><i class="bi bi-chevron-right me-2" style="color: #c2a83e; font-size: 0.8rem"></i> {% trans "Nos services" %}</a
+                >
               </li>
               <li class="mb-2">
-                <a href="{% url 'contact' %}" class="text-white text-decoration-none d-flex align-items-center"><i
-                    class="bi bi-chevron-right me-2" style="color:#C2A83E; font-size:0.8rem"></i> {% trans "Contactez-nous" %}</a>
+                <a href="{% url 'contact' %}" class="text-white text-decoration-none d-flex align-items-center"
+                  ><i class="bi bi-chevron-right me-2" style="color: #c2a83e; font-size: 0.8rem"></i> {% trans "Contactez-nous" %}</a
+                >
               </li>
             </ul>
           </div>
           <div class="col-md-4">
-            <h3 class="fs-4 mb-3" style="color:#C2A83E">{% trans "Contactez-nous" %}</h3>
+            <h3 class="fs-4 mb-3" style="color: #c2a83e">{% trans "Contactez-nous" %}</h3>
             <div class="mb-3 d-flex">
-              <i class="bi bi-house me-3 mt-1" style="color:#C2A83E"></i>
-              <p>
-                {% blocktrans %}
-                22, Avenue du Palais du Peuple, Quartier La Voix du Peuple, Commune de Lingwala, Kinshasa, République Démocratique du Congo
-                {% endblocktrans %}
-              </p>
+              <i class="bi bi-house me-3 mt-1" style="color: #c2a83e"></i>
+              <p>{% blocktrans %} 22, Avenue du Palais du Peuple, Quartier La Voix du Peuple, Commune de Lingwala, Kinshasa, République Démocratique du Congo {% endblocktrans %}</p>
             </div>
             <div class="mb-3 d-flex">
-              <i class="bi bi-telephone me-3 mt-1" style="color:#C2A83E"></i>
-              <a href="tel:+243813352409" class="text-decoration-none text-white" target="_blank">{% blocktrans %}Appelez-nous 24/7{% endblocktrans %}
-                <br /> <strong>+ 243 813 352 409</strong></a>
+              <i class="bi bi-telephone me-3 mt-1" style="color: #c2a83e"></i>
+              <a href="tel:+243813352409" class="text-decoration-none text-white" target="_blank"
+                >{% blocktrans %}Appelez-nous 24/7{% endblocktrans %} <br />
+                <strong>+ 243 813 352 409</strong></a
+              >
             </div>
             <div class="mb-3 d-flex">
-              <i class="bi bi-envelope me-3 mt-1" style="color:#C2A83E"></i>
+              <i class="bi bi-envelope me-3 mt-1" style="color: #c2a83e"></i>
               <a href="mailto:contact@lexispartners.com" class="text-decoration-none text-white" target="_blank">
-                {% blocktrans %}Notre email{% endblocktrans %} : <br /><strong>contact@lexispartnersconsulting.com</strong></a>
+                {% blocktrans %}Notre email{% endblocktrans %} : <br /><strong>contact@lexispartnersconsulting.com</strong></a
+              >
             </div>
             <div class="mb-3 d-flex">
-              <i class="bi bi-clock me-3 mt-1" style="color:#C2A83E"></i>
+              <i class="bi bi-clock me-3 mt-1" style="color: #c2a83e"></i>
               <p>
-                {% blocktrans %}Notre horaire d'ouverture{% endblocktrans %} <br /> <strong>{% blocktrans %}Du Lundi au Vendredi de 8H30 à 18H30{% endblocktrans %}</strong>
+                {% blocktrans %}Notre horaire d'ouverture{% endblocktrans %} <br />
+                <strong>{% blocktrans %}Du Lundi au Vendredi de 8H30 à 18H30{% endblocktrans %}</strong>
               </p>
             </div>
           </div>
@@ -80,9 +84,7 @@
     </div>
   </div>
 
-  <div class="text-center py-3" style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem;">
-    <p class="mb-0 small">
-      &copy;{% now 'Y' %} Lexis partners consulting. <br>{% blocktrans %}Tous nos droits réservés.{% endblocktrans %}
-    </p>
+  <div class="text-center py-3" style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 2rem">
+    <p class="mb-0 small">&copy;{% now 'Y' %} Lexis partners consulting. <br />{% blocktrans %}Tous nos droits réservés.{% endblocktrans %}</p>
   </div>
 </footer>

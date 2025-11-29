@@ -3,14 +3,11 @@
 
 <nav class="navbar navbar-expand-md sticky-top position-absolute w-100 bg-transparent" style="z-index: 1000">
   <div class="container mt-3 px-5">
-    <div class="d-flex align-items-center justify-content-between w-100">
+    <div class="d-flex align-items-center justify-content-between w-100 position-relative">
       <!-- Logo -->
-      <div class="d-flex align-items-center">
-        <a href="{% url 'index' %}" class="navbar-brand m-0 p-0 d-flex align-items-center">
-          <span class="fw-bold text-gold">LEXIS</span>
-          <span class="text-white ms-1">Partners Consulting</span>
-        </a>
-      </div>
+      <a href="{% url 'index' %}" class="navbar-brand m-0 p-0 d-flex align-items-center position-relative logo-wrapper">
+        <img src="{% static 'images/logo-type.png' %}" alt="LEXIS Partners Consulting" class="navbar-logo">
+      </a>
 
       <!-- Menu principal (tablette et desktop) -->
       <div class="d-none d-md-flex align-items-center">
@@ -69,9 +66,8 @@
 <!-- Menu Offcanvas (mobile) -->
 <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="offcanvasNavbar">
   <div class="offcanvas-header mt-3 px-5">
-    <a href="{% url 'index' %}" class="navbar-brand m-0 p-0">
-      <span class="fw-bold text-gold">LEXIS</span>
-      <span class="text-white ms-1">Partners Consulting</span>
+    <a href="{% url 'index' %}" class="navbar-brand m-0 p-0 d-flex align-items-center position-relative logo-wrapper-offcanvas">
+      <img src="{% static 'images/logo-type.png' %}" alt="LEXIS Partners Consulting" class="navbar-logo-offcanvas">
     </a>
     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>

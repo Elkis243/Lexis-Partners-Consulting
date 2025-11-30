@@ -199,6 +199,14 @@ msgstr "Contact information"
 msgid "Adresse"
 msgstr "Address"
 
+#: lexis_partners_consulting/templates/app/contact.html:91
+msgid ""
+"22, Avenue du Palais du Peuple, Quartier La Voix du Peuple, Commune de "
+"Lingwala, Kinshasa, République Démocratique du Congo"
+msgstr ""
+"22, Avenue of the People's Palace, La Voix du Peuple District, Lingwala "
+"Municipality, Kinshasa, Democratic Republic of the Congo"
+
 #: lexis_partners_consulting/templates/app/index.html:27
 msgid "Découvrez notre cabinet"
 msgstr "Discover our firm"

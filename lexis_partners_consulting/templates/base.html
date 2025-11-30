@@ -12,10 +12,11 @@
 
     <!-- Meta description pour le référencement (SEO) -->
     <meta name="description"
-      content="Lexis Partners Consulting est un cabinet juridique et de conseil spécialisé en droit public, marchés publics, régulation et facilitation des affaires. Nous accompagnons gouvernements, institutions et entreprises dans les investissements, la gouvernance et la réalisation de grands projets en Afrique et à l’international." />
+      content="Cabinet de consultance en droit public, régulation et facilitation d’affaires, offrant une expertise stratégique pour accompagner les institutions et les acteurs économiques." />
 
-    <meta name="keywords"
-      content="Lexis Partners Consulting, cabinet juridique, droit public, marchés publics, régulation, investissements, partenariats public-privé, gouvernance, conseil juridique, lobbying, facilitation des affaires, fiscalité, droit administratif, Afrique, RDC" />
+    <meta name="keywords" 
+    content="droit public, régulation, consultance juridique, facilitation des affaires, gouvernance, marchés publics, partenariats public-privé, investissements, conseil juridique, cabinet de consultance, stratégie institutionnelle, accompagnement juridique, Afrique, RDC" />
+
 
     <!-- Open Graph pour les réseaux sociaux -->
     <meta property="og:title" content="{{ page|default:'Lexis Partners Consulting' }}" />
@@ -35,7 +36,11 @@
     <meta name="twitter:image:alt" content="Site officiel de Lexis Partners Consulting" />
 
     <!-- Favicon du site -->
-    <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}" />
+    <link rel="icon" type="image/png" href="{% static 'images/favicon-96x96.png' %}" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{% static 'images/favicon.svg' %}" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}" />
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}" />
 
     <!-- URL canonique pour éviter les problèmes de contenu dupliqué -->
     <link rel="canonical" href="https://lexispartnersconsulting.com/" />

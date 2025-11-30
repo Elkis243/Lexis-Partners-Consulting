@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-29 11:05+0100\n"
+"POT-Creation-Date: 2025-11-30 07:08+0100\n"
 "PO-Revision-Date: 2025-10-29 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lexis_partners_consulting/templates/app/about.html:11
+#: lexis_partners_consulting/templates/app/about.html:6
 msgid "Cabinet d’excellence en droit public et régulation"
 msgstr "Excellence law firm in public law and regulation"
 
-#: lexis_partners_consulting/templates/app/about.html:12
+#: lexis_partners_consulting/templates/app/about.html:7
 #: lexis_partners_consulting/templates/app/index.html:12
 msgid ""
 "Notre cabinet accompagne institutions et entreprises en droit public et "
@@ -33,14 +33,16 @@ msgstr ""
 msgid "A propos de nous"
 msgstr "About us"
 
-#: lexis_partners_consulting/templates/app/about.html:26
+#: lexis_partners_consulting/templates/app/about.html:27
 msgid ""
 "Lexis Partners Consulting est un cabinet spécialisé en droit public et "
 "régulation, basé en RDC et reconnu pour son expertise en Afrique. Notre "
-"équipe pluridisciplinaire réunit des compétences juridiques avancées et une "
-"compréhension approfondie des enjeux politiques et économiques actuels. Nous "
-"accompagnons gouvernements, institutions publiques et investisseurs privés "
-"dans la création et la mise en œuvre de cadres juridiques performants."
+"équipe pluridisciplinaire\n"
+"            réunit des compétences juridiques avancées et une compréhension "
+"approfondie des enjeux politiques et économiques actuels. Nous accompagnons "
+"gouvernements, institutions publiques et\n"
+"            investisseurs privés dans la création et la mise en œuvre de "
+"cadres juridiques performants."
 msgstr ""
 "Lexis Partners Consulting is a law firm specialized in public law and "
 "regulation, based in DRC and recognized for its expertise in Africa. Our "
@@ -49,81 +51,83 @@ msgstr ""
 "governments, public institutions and private investors in creating and "
 "implementing effective legal frameworks."
 
-#: lexis_partners_consulting/templates/app/about.html:27
+#: lexis_partners_consulting/templates/app/about.html:31
 msgid ""
 "Le cabinet offre une expertise pointue dans des domaines clés tels que :"
 msgstr "The firm offers sharp expertise in key areas such as:"
 
-#: lexis_partners_consulting/templates/app/about.html:29
+#: lexis_partners_consulting/templates/app/about.html:33
 msgid "Les marchés publics et les partenariats public-privé"
 msgstr "Public procurement and public-private partnerships"
 
-#: lexis_partners_consulting/templates/app/about.html:30
+#: lexis_partners_consulting/templates/app/about.html:34
 msgid "Le droit des investissements et des grands projets publics"
 msgstr "Investment law and major public projects"
 
-#: lexis_partners_consulting/templates/app/about.html:31
+#: lexis_partners_consulting/templates/app/about.html:35
 msgid "La gouvernance publique, les réformes administratives et la régulation"
 msgstr "Public governance, administrative reforms and regulation"
 
-#: lexis_partners_consulting/templates/app/about.html:32
+#: lexis_partners_consulting/templates/app/about.html:36
 msgid "Les finances publiques et la fiscalité"
 msgstr "Public finances and taxation"
 
-#: lexis_partners_consulting/templates/app/about.html:33
+#: lexis_partners_consulting/templates/app/about.html:37
 msgid ""
 "Les relations entre le gouvernement, le parlement et les acteurs économiques"
 msgstr "Relations between government, parliament and economic actors"
 
-#: lexis_partners_consulting/templates/app/about.html:50
+#: lexis_partners_consulting/templates/app/about.html:54
 msgid "Notre mission"
 msgstr "Our mission"
 
-#: lexis_partners_consulting/templates/app/about.html:51
+#: lexis_partners_consulting/templates/app/about.html:56
 msgid ""
-"Offrir des solutions juridiques et stratégiques innovantes pour\n"
-"                faciliter les interactions entre l'État et le secteur privé, "
-"en garantissant transparence, efficacité et\n"
+"Offrir des solutions juridiques et stratégiques innovantes pour faciliter "
+"les interactions entre l'État et le secteur privé, en garantissant "
+"transparence, efficacité et\n"
 "                conformité dans les opérations et réformes publiques"
 msgstr ""
 "To provide innovative legal and strategic solutions to facilitate "
 "interactions between the State and the private sector, ensuring "
 "transparency, efficiency and compliance in public operations and reforms"
 
-#: lexis_partners_consulting/templates/app/about.html:61
+#: lexis_partners_consulting/templates/app/about.html:66
 msgid "Notre vision"
 msgstr "Our vision"
 
-#: lexis_partners_consulting/templates/app/about.html:62
+#: lexis_partners_consulting/templates/app/about.html:68
 msgid ""
-"Devenir le partenaire incontournable en matière de conseil en droit\n"
-"                public et de facilitation des affaires pour les "
-"gouvernements et les investisseurs, tout en renforçant\n"
-"                la gouvernance et la compétitivité économique en Afrique et "
-"au-delà."
+"Devenir le partenaire incontournable en matière de conseil en droit public "
+"et de facilitation des affaires pour les gouvernements et les investisseurs, "
+"tout en\n"
+"                renforçant la gouvernance et la compétitivité économique en "
+"Afrique et au-delà."
 msgstr ""
 "To become the essential partner for public law consulting and business "
 "facilitation for governments and investors, while strengthening governance "
 "and economic competitiveness in Africa and beyond."
 
-#: lexis_partners_consulting/templates/app/about.html:77
-msgid "Prêt à transformer vos enjeux <br /> juridiques en opportunités ?"
+#: lexis_partners_consulting/templates/app/about.html:83
+msgid ""
+"Prêt à transformer vos enjeux <br />\n"
+"          juridiques en opportunités ?"
 msgstr "Ready to transform your legal challenges <br /> into opportunities?"
 
-#: lexis_partners_consulting/templates/app/about.html:79
+#: lexis_partners_consulting/templates/app/about.html:86
 msgid "Contactez-nous pour une consultation stratégique avec nos experts."
 msgstr "Contact us for a strategic consultation with our experts."
 
-#: lexis_partners_consulting/templates/app/about.html:80
+#: lexis_partners_consulting/templates/app/about.html:87
 msgid "Prendre rendez-vous"
 msgstr "Schedule an appointment"
 
 #: lexis_partners_consulting/templates/app/contact.html:7
 #: lexis_partners_consulting/templates/app/index.html:14
-#: lexis_partners_consulting/templates/components/footer.html:47
-#: lexis_partners_consulting/templates/components/footer.html:52
-#: lexis_partners_consulting/templates/components/navbar.html:35
-#: lexis_partners_consulting/templates/components/navbar.html:116
+#: lexis_partners_consulting/templates/components/footer.html:54
+#: lexis_partners_consulting/templates/components/footer.html:60
+#: lexis_partners_consulting/templates/components/navbar.html:32
+#: lexis_partners_consulting/templates/components/navbar.html:112
 msgid "Contactez-nous"
 msgstr "Contact us"
 
@@ -183,23 +187,38 @@ msgstr "Your message"
 msgid "Envoyer le message"
 msgstr "Send message"
 
+#: lexis_partners_consulting/templates/app/contact.html:23
+msgid "Envoyez-nous un message"
+msgstr "Send us a message"
+
+#: lexis_partners_consulting/templates/app/contact.html:83
+msgid "Informations de contact"
+msgstr "Contact information"
+
+#: lexis_partners_consulting/templates/app/contact.html:90
+msgid "Adresse"
+msgstr "Address"
+
 #: lexis_partners_consulting/templates/app/index.html:27
 msgid "Découvrez notre cabinet"
 msgstr "Discover our firm"
 
 #: lexis_partners_consulting/templates/app/index.html:28
 msgid ""
-"se positionne comme un acteur de référence en Afrique et à\n"
-"            l’international pour le conseil juridique stratégique en droit "
-"public et la facilitation des relations entre\n"
-"            les gouvernements, institutions publiques et entreprises privées."
-"\" "
+"est un cabinet de consultance spécialisé en droit public, régulation et "
+"facilitation des affaires. Nous accompagnons les gouvernements, institutions "
+"publiques et entreprises privées à travers une expertise stratégique et "
+"personnalisée, afin de favoriser la gouvernance efficace, les "
+"investissements et le développement des projets en République démocratique "
+"du Congo."
 msgstr ""
-"positions itself as a leading player in Africa and internationally for "
-"strategic legal advice in public law and the facilitation of relations "
-"between governments, public institutions, and private companies."
+"is a consulting firm specialized in public law, regulation and business "
+"facilitation. We support governments, public institutions and private "
+"companies through strategic and personalized expertise, to promote effective "
+"governance, investments and project development in the Democratic Republic "
+"of the Congo."
 
-#: lexis_partners_consulting/templates/app/index.html:33
+#: lexis_partners_consulting/templates/app/index.html:31
 msgid ""
 "Notre approche couvre l'ensemble des enjeux critiques : marchés publics et "
 "PPP, réformes\n"
@@ -214,24 +233,24 @@ msgstr ""
 "made solutions to optimize access to public markets, influence legislative "
 "reforms, and create attractive legal frameworks for major investments."
 
-#: lexis_partners_consulting/templates/app/index.html:37
+#: lexis_partners_consulting/templates/app/index.html:35
 msgid "En savoir plus"
 msgstr "Find out more"
 
-#: lexis_partners_consulting/templates/app/index.html:48
+#: lexis_partners_consulting/templates/app/index.html:46
 msgid ""
 "Des services juridiques sur mesure pour vous accompagner à chaque étape."
 msgstr "Tailor-made legal services to support you at every stage."
 
-#: lexis_partners_consulting/templates/app/index.html:49
+#: lexis_partners_consulting/templates/app/index.html:47
 msgid "Voir tous nos services"
 msgstr "See all our services"
 
-#: lexis_partners_consulting/templates/app/index.html:58
+#: lexis_partners_consulting/templates/app/index.html:56
 msgid "Droit des Marchés Publics et Partenariats Public-Privé"
 msgstr "Public Procurement Law and Public-Private Partnerships"
 
-#: lexis_partners_consulting/templates/app/index.html:59
+#: lexis_partners_consulting/templates/app/index.html:57
 msgid ""
 "Nous accompagnons les entreprises et institutions dans les marchés\n"
 "              publics, de la passation à la gestion des contentieux.\" "
@@ -239,12 +258,12 @@ msgstr ""
 "We support companies and institutions in public procurement, from contract "
 "award to litigation management."
 
-#: lexis_partners_consulting/templates/app/index.html:68
+#: lexis_partners_consulting/templates/app/index.html:66
 #: lexis_partners_consulting/templates/app/services.html:42
 msgid "Droit des Investissements et Grands Projets Publics"
 msgstr "Investment Law and Major Public Projects"
 
-#: lexis_partners_consulting/templates/app/index.html:69
+#: lexis_partners_consulting/templates/app/index.html:67
 msgid ""
 "Nous accompagnons les investisseurs dans le montage juridique de projets\n"
 "              d’infrastructure et les négociations avec les autorités et "
@@ -253,12 +272,12 @@ msgstr ""
 "We support investors in the legal structuring of infrastructure projects and "
 "negotiations with authorities and donors."
 
-#: lexis_partners_consulting/templates/app/index.html:78
+#: lexis_partners_consulting/templates/app/index.html:76
 #: lexis_partners_consulting/templates/app/services.html:52
 msgid "Droit de la Gouvernance Publique et Réformes Administratives"
 msgstr "Public Governance Law and Administrative Reforms"
 
-#: lexis_partners_consulting/templates/app/index.html:79
+#: lexis_partners_consulting/templates/app/index.html:77
 msgid ""
 "Nous accompagnons les gouvernements dans la modernisation administrative,\n"
 "              la conformité aux normes internationales et la rédaction de "
@@ -267,80 +286,80 @@ msgstr ""
 "We support governments in administrative modernization, compliance with "
 "international standards, and the drafting of legislative texts."
 
-#: lexis_partners_consulting/templates/app/index.html:93
+#: lexis_partners_consulting/templates/app/index.html:91
 msgid "Nos Compétences et Domaines d’Intervention"
 msgstr "Our Skills and Areas of Expertise"
 
-#: lexis_partners_consulting/templates/app/index.html:95
+#: lexis_partners_consulting/templates/app/index.html:93
 msgid ""
 "Une expertise juridique pointue <br /> pour accompagner vos décisions clés"
 msgstr "Sharp legal expertise <br /> to support your key decisions"
 
-#: lexis_partners_consulting/templates/app/index.html:101
+#: lexis_partners_consulting/templates/app/index.html:99
 msgid "Compétences Juridiques Avancées"
 msgstr "Advanced Legal Skills"
 
-#: lexis_partners_consulting/templates/app/index.html:104
+#: lexis_partners_consulting/templates/app/index.html:102
 msgid "Droit public & administratif"
 msgstr "Public & administrative law"
 
-#: lexis_partners_consulting/templates/app/index.html:107
+#: lexis_partners_consulting/templates/app/index.html:105
 msgid "Marchés publics & PPP"
 msgstr "Public procurement & PPP"
 
-#: lexis_partners_consulting/templates/app/index.html:110
+#: lexis_partners_consulting/templates/app/index.html:108
 msgid "Droit international public"
 msgstr "International public law"
 
-#: lexis_partners_consulting/templates/app/index.html:113
+#: lexis_partners_consulting/templates/app/index.html:111
 msgid "Régulation économique"
 msgstr "Economic regulation"
 
-#: lexis_partners_consulting/templates/app/index.html:120
+#: lexis_partners_consulting/templates/app/index.html:118
 msgid "Compétences Stratégiques et Politiques"
 msgstr "Strategic and Political Skills"
 
-#: lexis_partners_consulting/templates/app/index.html:124
+#: lexis_partners_consulting/templates/app/index.html:122
 msgid "Lobbying & relations institutionnelles"
 msgstr "Lobbying & institutional relations"
 
-#: lexis_partners_consulting/templates/app/index.html:127
+#: lexis_partners_consulting/templates/app/index.html:125
 msgid "Négociation gouvernementale"
 msgstr "Government negotiation"
 
-#: lexis_partners_consulting/templates/app/index.html:130
+#: lexis_partners_consulting/templates/app/index.html:128
 msgid "Gestion de crise"
 msgstr "Crisis management"
 
-#: lexis_partners_consulting/templates/app/index.html:133
+#: lexis_partners_consulting/templates/app/index.html:131
 msgid "Contentieux stratégiques"
 msgstr "Strategic litigation"
 
-#: lexis_partners_consulting/templates/app/index.html:140
+#: lexis_partners_consulting/templates/app/index.html:138
 msgid "Compétences en Gestion et Développement"
 msgstr "Management and Development Skills"
 
-#: lexis_partners_consulting/templates/app/index.html:144
+#: lexis_partners_consulting/templates/app/index.html:142
 msgid "Développement commercial"
 msgstr "Business development"
 
-#: lexis_partners_consulting/templates/app/index.html:147
+#: lexis_partners_consulting/templates/app/index.html:145
 msgid "Communication & image publique"
 msgstr "Communication & public image"
 
-#: lexis_partners_consulting/templates/app/index.html:150
+#: lexis_partners_consulting/templates/app/index.html:148
 msgid "Veille stratégique"
 msgstr "Strategic monitoring"
 
-#: lexis_partners_consulting/templates/app/index.html:153
+#: lexis_partners_consulting/templates/app/index.html:151
 msgid "Intelligence économique"
 msgstr "Economic intelligence"
 
-#: lexis_partners_consulting/templates/app/index.html:167
+#: lexis_partners_consulting/templates/app/index.html:165
 msgid "Notre approche Juridique"
 msgstr "Our Legal Approach"
 
-#: lexis_partners_consulting/templates/app/index.html:168
+#: lexis_partners_consulting/templates/app/index.html:166
 msgid ""
 "Nous croyons fermement que le droit public et la régulation sont des "
 "leviers\n"
@@ -353,28 +372,28 @@ msgstr ""
 "economic and social development. Our firm is committed to providing high-"
 "quality legal advice, tailored to the specific needs of our clients."
 
-#: lexis_partners_consulting/templates/app/index.html:173
+#: lexis_partners_consulting/templates/app/index.html:171
 msgid ""
 "Des avocats spécialisés dans\n"
 "            chaque\n"
 "            domaine du droit"
 msgstr "Lawyers specialized in every area of law"
 
-#: lexis_partners_consulting/templates/app/index.html:178
+#: lexis_partners_consulting/templates/app/index.html:176
 msgid ""
 "Un suivi personnalisé tout au long\n"
 "            de\n"
 "            votre dossier"
 msgstr "Personalized follow-up throughout your case"
 
-#: lexis_partners_consulting/templates/app/index.html:183
+#: lexis_partners_consulting/templates/app/index.html:181
 msgid ""
 "Une transparence totale sur les\n"
 "            honoraires et les démarches\n"
 "            honoraires et les démarches"
 msgstr "Total transparency regarding fees and procedures"
 
-#: lexis_partners_consulting/templates/app/index.html:188
+#: lexis_partners_consulting/templates/app/index.html:186
 msgid ""
 "Une réactivité à toute épreuve\n"
 "            pour\n"
@@ -382,7 +401,7 @@ msgid ""
 msgstr ""
 "Responsiveness that stands up to any challenge to address your urgent needs"
 
-#: lexis_partners_consulting/templates/app/index.html:193
+#: lexis_partners_consulting/templates/app/index.html:191
 msgid ""
 "Une stratégie juridique sur mesure\n"
 "            adaptée à vos besoins"
@@ -609,71 +628,68 @@ msgstr "Consulting on new drug market entry (FDA, EMA, WHO compliance)"
 msgid "Négociation de contrats sportifs (clubs, joueurs, sponsors)"
 msgstr "Sports contract negotiation (clubs, players, sponsors)"
 
-#: lexis_partners_consulting/templates/components/footer.html:14
+#: lexis_partners_consulting/templates/components/footer.html:11
 msgid ""
-"\n"
-"                Notre cabinet accompagne les institutions, entreprises et "
-"acteurs publics dans la résolution de leurs enjeux juridiques, en offrant "
-"des conseils spécialisés et stratégiques en droit public, régulation ainsi "
-"qu'en gouvernance. Nous mettons à votre disposition notre expertise "
-"pluridisciplinaire pour répondre à vos besoins spécifiques et accompagner "
-"durablement votre développement.\n"
-"                "
+" Notre cabinet accompagne les institutions, entreprises et acteurs publics "
+"dans la résolution de leurs enjeux juridiques, en offrant des conseils "
+"spécialisés et\n"
+"                stratégiques en droit public, régulation ainsi qu'en "
+"gouvernance. Nous mettons à votre disposition notre expertise "
+"pluridisciplinaire pour répondre à vos besoins spécifiques et\n"
+"                accompagner durablement votre développement. "
 msgstr ""
-"\n"
-"Our firm supports institutions, businesses, and public actors in resolving "
+" Our firm supports institutions, businesses, and public actors in resolving "
 "their legal challenges, offering specialized and strategic advice in public "
 "law, regulation, and governance. We make our multidisciplinary expertise "
 "available to meet your specific needs and support your long-term "
-"development.\n"
-"                "
+"development. "
 
-#: lexis_partners_consulting/templates/components/footer.html:35
-#: lexis_partners_consulting/templates/components/navbar.html:20
-#: lexis_partners_consulting/templates/components/navbar.html:101
+#: lexis_partners_consulting/templates/components/footer.html:39
+#: lexis_partners_consulting/templates/components/navbar.html:17
+#: lexis_partners_consulting/templates/components/navbar.html:97
 msgid "Accueil"
 msgstr "Home"
 
-#: lexis_partners_consulting/templates/components/footer.html:39
-#: lexis_partners_consulting/templates/components/navbar.html:25
-#: lexis_partners_consulting/templates/components/navbar.html:106
+#: lexis_partners_consulting/templates/components/footer.html:44
+#: lexis_partners_consulting/templates/components/navbar.html:22
+#: lexis_partners_consulting/templates/components/navbar.html:102
 msgid "A propos"
 msgstr "About"
 
-#: lexis_partners_consulting/templates/components/footer.html:43
-#: lexis_partners_consulting/templates/components/navbar.html:30
-#: lexis_partners_consulting/templates/components/navbar.html:111
+#: lexis_partners_consulting/templates/components/footer.html:49
+#: lexis_partners_consulting/templates/components/navbar.html:27
+#: lexis_partners_consulting/templates/components/navbar.html:107
 msgid "Nos services"
 msgstr "Our services"
 
-#: lexis_partners_consulting/templates/components/footer.html:56
-msgid ""
-"\n"
-"                22, Avenue du Palais du Peuple, Quartier La Voix du Peuple, "
-"Commune de Lingwala, Kinshasa, République Démocratique du Congo\n"
-"                "
-msgstr ""
-"\n"
-"                22, Avenue of the People's Palace, La Voix du Peuple District, "
-"Lingwala Municipality, Kinshasa, Democratic Republic of the Congo\n"
-"                "
-
 #: lexis_partners_consulting/templates/components/footer.html:63
+msgid ""
+" 22, Avenue du Palais du Peuple, Quartier La Voix du Peuple, Commune de "
+"Lingwala, Kinshasa, République Démocratique du Congo "
+msgstr ""
+" 22, Avenue of the People's Palace, La Voix du Peuple "
+"District, Lingwala Municipality, Kinshasa, Democratic Republic of the Congo "
+
+#: lexis_partners_consulting/templates/components/footer.html:68
 msgid "Appelez-nous 24/7"
 msgstr "Call us 24/7"
 
-#: lexis_partners_consulting/templates/components/footer.html:69
+#: lexis_partners_consulting/templates/components/footer.html:75
+msgid "Contactez-nous sur WhatsApp"
+msgstr "Contact us on WhatsApp"
+
+#: lexis_partners_consulting/templates/components/footer.html:82
 msgid "Notre email"
 msgstr "Our email"
 
-#: lexis_partners_consulting/templates/components/footer.html:74
+#: lexis_partners_consulting/templates/components/footer.html:88
 msgid "Notre horaire d'ouverture"
 msgstr "Our opening hours"
 
-#: lexis_partners_consulting/templates/components/footer.html:74
+#: lexis_partners_consulting/templates/components/footer.html:89
 msgid "Du Lundi au Vendredi de 8H30 à 18H30"
 msgstr "Monday to Friday from 8:30 AM to 6:30 PM"
 
-#: lexis_partners_consulting/templates/components/footer.html:85
+#: lexis_partners_consulting/templates/components/footer.html:99
 msgid "Tous nos droits réservés."
 msgstr "All rights reserved."

@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import redirect
-from django.core.mail import send_mail
 from django.conf import settings
 from django.http import HttpResponse
+from django.core.mail import EmailMessage
 
 
 def index(request):
@@ -18,7 +18,7 @@ def about(request):
 
 def contact(request):
     page = "Contact"
-    receiver = settings.EMAIL_HOST_USER
+    receiver = "info@lexispartnersconsulting.com"
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")
@@ -26,31 +26,36 @@ def contact(request):
         subject = request.POST.get("subject")
         message = request.POST.get("message")
 
+        email_subject = f"Nouveau message de {name}"
+        body = f"""
+                    Nouveau message reçu via le formulaire de contact:
+
+                    Nom complet: {name}
+                    Email: {email}
+                    Téléphone: {phone}
+                    Sujet: {subject}
+
+                    Message:
+                    {message}
+
+                    ---
+                    Cet email a été envoyé automatiquement depuis le formulaire de contact.
+                    """
+        
+        
         try:
-            email_subject = f"Nouveau contact : {subject}"
-            email_content = f"""
-            Nouveau message reçu via le formulaire de contact:
-
-            Nom complet: {name}
-            Email: {email}
-            Téléphone: {phone}
-            Sujet: {subject}
-
-            Message:
-            {message}
-
-            ---
-            Cet email a été envoyé automatiquement depuis le formulaire de contact.
-            """
-            send_mail(
-                email_subject,
-                email_content,
-                email,
-                [receiver],
-                fail_silently=False,
+            mail = EmailMessage(
+                subject=email_subject,
+                body=body,
+                from_email=settings.EMAIL_HOST_USER,  # Email de l'hosting pour répondre
+                to=[receiver],  # Destinataire un alias pour répondre
+                reply_to=[email],
             )
+            mail.send(fail_silently=False)
+
             messages.success(request, "Votre message a été envoyé avec succès !")
             return redirect(request.path)
+
         except Exception as e:
             messages.error(request, f"Erreur lors de l'envoi: {str(e)}")
             return redirect(request.path)

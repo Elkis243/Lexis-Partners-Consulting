@@ -6,5 +6,5 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('contact/', contact, name='contact'),
     path('services/', services, name='services'),
-
+    path('favicon.ico', favicon_view, name='favicon'),
 ]

@@ -3,44 +3,28 @@
 <html lang="fr">
 
   <head>
-    <!-- Définition de l'encodage des caractères et de la mise à l'échelle pour les appareils mobiles -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Titre de la page, dynamique grâce à la variable 'page' -->
-    <title>Lexis partners consulting - {{ page }}</title>
+    <title>Lexis Partners Consulting</title>
 
     <!-- Meta description pour le référencement (SEO) -->
     <meta name="description"
-      content="Cabinet de consultance en droit public, régulation et facilitation d’affaires, offrant une expertise stratégique pour accompagner les institutions et les acteurs économiques." />
+      content="Cabinet de consultance en droit public, régulation et facilitation d’affaires en RDC, accompagnant institutions et acteurs économiques." />
 
-    <meta name="keywords" 
-    content="droit public, régulation, consultance juridique, facilitation des affaires, gouvernance, marchés publics, partenariats public-privé, investissements, conseil juridique, cabinet de consultance, stratégie institutionnelle, accompagnement juridique, Afrique, RDC" />
-
+    <!-- Mots-clés pour le référencement (SEO) -->
+    <meta name="keywords"
+      content="droit public, régulation, consultance juridique, facilitation des affaires, gouvernance, marchés publics, partenariats public-privé, investissements, conseil juridique, cabinet de consultance, stratégie institutionnelle, accompagnement juridique, Afrique, RDC" />
 
     <!-- Open Graph pour les réseaux sociaux -->
-    <meta property="og:title" content="{{ page|default:'Lexis Partners Consulting' }}" />
-    <meta property="og:description"
-      content="Lexis Partners Consulting est un cabinet spécialisé en droit public, régulation et facilitation des affaires. Nous accompagnons gouvernements, institutions et entreprises dans les marchés publics, les investissements, la gouvernance et les grands projets en Afrique et à l'international." />
+    <meta property="og:title" content="Lexis Partners Consulting" />
+    <meta property="og:description" content="Lexis Partners Consulting est un cabinet spécialisé en droit public, régulation et facilitation des affaires. Nous accompagnons gouvernements, institutions et entreprises dans les marchés publics, les investissements, la gouvernance et les grands projets en Afrique et à l'international." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://{{ request.get_host }}{{ request.path }}" />
     <meta property="og:image" content="https://{{ request.get_host }}{% static 'images/1200x630.jpeg' %}" />
-    <meta property="og:image:alt" content="Site officiel de Lexis Partners Consulting" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ page|default:'Lexis Partners Consulting' }}" />
-    <meta name="twitter:description"
-      content="Cabinet de conseil et juridique spécialisé en droit public, marchés publics, régulation et gouvernance en Afrique et à l'international." />
-    <meta name="twitter:image" content="https://{{ request.get_host }}{% static 'images/600x600.jpg' %}" />
-    <meta name="twitter:image:alt" content="Site officiel de Lexis Partners Consulting" />
+    <meta property="og:image:alt" content="Logo de Lexis Partners Consulting" />
 
     <!-- Favicon du site -->
-    <link rel="icon" type="image/png" href="{% static 'images/favicon-96x96.png' %}" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="{% static 'images/favicon.svg' %}" />
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}" />
-    <link rel="manifest" href="{% static 'images/site.webmanifest' %}" />
 
     <!-- URL canonique pour éviter les problèmes de contenu dupliqué -->
     <link rel="canonical" href="https://lexispartnersconsulting.com/" />

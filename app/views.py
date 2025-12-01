@@ -4,6 +4,8 @@ from django.shortcuts import redirect
 from django.conf import settings
 from django.http import HttpResponse
 from django.core.mail import EmailMessage
+from django.http import FileResponse
+import os
 
 
 def index(request):
@@ -79,3 +81,8 @@ def robots_txt(request):
         f"Sitemap: {request.build_absolute_uri('/sitemap.xml')}",
     ]
     return HttpResponse("\n".join(lines), content_type="text/plain")
+
+
+def favicon_view(request):
+    path = os.path.join(settings.BASE_DIR, "static", "images", "favicon.ico")
+    return FileResponse(open(path, "rb"), content_type="image/x-icon")

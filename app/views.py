@@ -43,8 +43,7 @@ def contact(request):
                     ---
                     Cet email a été envoyé automatiquement depuis le formulaire de contact.
                     """
-        
-        
+
         try:
             mail = EmailMessage(
                 subject=email_subject,
@@ -71,14 +70,18 @@ def services(request):
 
 
 def robots_txt(request):
-    content = """
-        User-agent: *
-        Disallow: /admin/
-        Allow: /
-        Allow: /static/
-        Allow: /favicon.ico
-        Sitemap: https://www.lexispartnersconsulting.com/sitemap.xml
-        """
+    """
+    Vue pour servir le fichier robots.txt
+    """
+    sitemap_url = request.build_absolute_uri("/sitemap.xml")
+    content = f"""User-agent: *
+Disallow: /admin/
+Allow: /
+Allow: /static/
+Allow: /favicon.ico
+
+Sitemap: {sitemap_url}
+"""
     return HttpResponse(content, content_type="text/plain")
 
 

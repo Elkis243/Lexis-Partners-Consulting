@@ -17,14 +17,22 @@
 
     <!-- Open Graph pour les réseaux sociaux -->
     <meta property="og:title" content="Lexis Partners Consulting" />
-    <meta property="og:description" content="Lexis Partners Consulting est un cabinet spécialisé en droit public, régulation et facilitation des affaires. Nous accompagnons gouvernements, institutions et entreprises dans les marchés publics, les investissements, la gouvernance et les grands projets en Afrique et à l'international." />
+    <meta property="og:description"
+      content="Lexis Partners Consulting est un cabinet spécialisé en droit public, régulation et facilitation des affaires. Nous accompagnons gouvernements, institutions et entreprises dans les marchés publics, les investissements, la gouvernance et les grands projets en Afrique et à l'international." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://{{ request.get_host }}{{ request.path }}" />
     <meta property="og:image" content="https://{{ request.get_host }}{% static 'images/1200x630.jpeg' %}" />
     <meta property="og:image:alt" content="Logo de Lexis Partners Consulting" />
 
     <!-- Favicon du site -->
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <!-- Pour les appareils Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <!-- Pour Android/Chrome -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
 
     <!-- URL canonique pour éviter les problèmes de contenu dupliqué -->
     <link rel="canonical" href="https://lexispartnersconsulting.com/" />

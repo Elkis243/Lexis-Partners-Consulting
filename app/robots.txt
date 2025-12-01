@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Allow: /
-Allow: /static/
-Allow: /favicon.ico
-Sitemap: https://www.lexispartnersconsulting.com/sitemap.xml

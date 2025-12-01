@@ -71,16 +71,15 @@ def services(request):
 
 
 def robots_txt(request):
-    """
-    Vue pour servir le fichier robots.txt
-    """
-    lines = [
-        "User-agent: *",
-        "Allow: /",
-        "",
-        f"Sitemap: {request.build_absolute_uri('/sitemap.xml')}",
-    ]
-    return HttpResponse("\n".join(lines), content_type="text/plain")
+    content = """
+        User-agent: *
+        Disallow: /admin/
+        Allow: /
+        Allow: /static/
+        Allow: /favicon.ico
+        Sitemap: https://www.lexispartnersconsulting.com/sitemap.xml
+        """
+    return HttpResponse(content, content_type="text/plain")
 
 
 def favicon_view(request):
